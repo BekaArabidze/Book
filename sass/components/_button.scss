@@ -1,0 +1,26 @@
+.but {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.2rem 5rem;
+        display: inline-block;
+        // border-radius: 10rem;
+        // border-radius: 1rem;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        animation-name: moveInBottom;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    &--white {
+        background-color: $font-white-color;
+        color: $primary-color-first;
+    }
+    &:hover {
+        background-color: $primary-color-first;
+        color: $font-white-color;
+    }
+}
+

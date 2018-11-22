@@ -1,3 +1,31 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1.5rem); }
+  100% {
+    opacity: 2;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -14,12 +42,38 @@ body {
 body {
   font-family: 'Roboto', sans-serif;
   /*font-size: 16px;*/
-  line-height: 1.7; }
+  line-height: 2; }
+
+.but:link, .but:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.2rem 5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+.but--white {
+  background-color: #ffffff;
+  color: #FF6473; }
+
+.but:hover {
+  background-color: #FF6473;
+  color: #ffffff; }
 
 .header {
-  height: 100vh; }
-  .header__header-video {
-    background-size: cover; }
+  height: 100vh;
+  position: relative;
+  background-color: gray; }
+  .header__video-box {
+    height: 100vh;
+    overflow: hidden; }
+  .header__video {
+    width: 100vw;
+    background-size: cover;
+    background-position: top; }
   .header__logo-box {
     position: absolute;
     left: 4rem;
@@ -28,23 +82,31 @@ body {
     height: 5rem; }
   .header__text-box {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid red;
     text-align: center; }
 
 .heading-primary {
-  border: 1px solid red;
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 4rem; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
-    letter-spacing: 20px; }
+    letter-spacing: 20px;
+    position: relative;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+    .heading-primary--main::first-letter {
+      color: #FF6473; }
   .heading-primary--sub {
     display: block;
     font-size: 3rem;
-    letter-spacing: 15px; }
+    position: relative;
+    letter-spacing: 15px;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }

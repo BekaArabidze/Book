@@ -1,23 +1,26 @@
 .header {
     height: 100vh;
-    
-    // background-image: url(/img/background.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: top;
-    
-
-    &__header-video {
-        
-        
-        background-size: cover;
+    position: relative;
+    background-color: gray;
 
 
-        // -ms-transform: translateX(-50%) translateY(-50%);
-        // -moz-transform: translateX(-50%) translateY(-50%);
-        // -webkit-transform: translateX(-50%) translateY(-50%);
-        // transform: translateX(-50%) translateY(-50%);
+    &__video-box {
+        height: 100vh;
+        overflow: hidden;
     }
+
+    &__video {
+        width: 100vw;
+        background-size: cover;
+        background-position: top;
+    }
+
+    // &__nav-box{
+    //     position:absolute;
+    //     top: 10%;
+    //     width: 50%;
+    //     height: auto;
+    // }
 
     &__logo-box {
         position: absolute;
@@ -31,31 +34,47 @@
 
     &__text-box {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
+        // max-width:600px;
         transform: translate(-50%, -50%);
-        border: 1px solid red;
+        // border: 1px solid red;
         text-align: center;
     }
+
 }
 
 .heading-primary {
-    border: 1px solid red;
-    color: $font-color;
+    // border: 1px solid red;
+    color: $font-white-color;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 
 
     &--main {
         display: block;
         font-size: 6rem;
         letter-spacing: 20px;
+        position: relative;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        &::first-letter {
+            color: $primary-color-first;
+        }
     }
 
     &--sub {
         display: block;
         font-size: 3rem;
+        position: relative;
         letter-spacing: 15px;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
     }
+
+
 }

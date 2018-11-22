@@ -1,0 +1,22 @@
+{
+  "name": "book-project",
+  "version": "1.0.0",
+  "description": "Project",
+  "main": "index.js",
+  "scripts": {
+    "compile:book": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klaatu98/Book.git"
+  },
+  "author": "Beqa Arabidze,Robinzon Sokhashvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klaatu98/Book/issues"
+  },
+  "homepage": "https://github.com/Klaatu98/Book#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

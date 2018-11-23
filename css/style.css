@@ -26,6 +26,14 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%; }
+  100% {
+    opacity: 1;
+    left: 0; } }
+
 *,
 *::after,
 *::before {
@@ -41,10 +49,13 @@ body {
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   /*font-size: 16px;*/
-  line-height: 2; }
+  line-height: 2;
+  overflow: hidden; }
 
 .but:link, .but:visited {
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.2rem 5rem;
@@ -91,7 +102,8 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  font-family: 'Roboto', sans-serif; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -110,3 +122,148 @@ body {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 40%;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'Varela Round', sans-serif; }
+  .container p {
+    font-size: 20px; }
+  .container a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #1abc9c;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    top: 5px; }
+    .container a:after {
+      content: '';
+      position: absolute;
+      background: #1abc9c;
+      height: 2px;
+      width: 0%;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 0;
+      transition: .35s ease; }
+    .container a:hover:after, .container a:focus:after, .container a:active:after {
+      width: 100%; }
+
+h1 {
+  position: relative;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif; }
+
+.button_container {
+  position: fixed;
+  top: 4%;
+  right: 3%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  transition: opacity .25s ease;
+  z-index: 101; }
+  .button_container:hover {
+    opacity: .7;
+    z-index: 101; }
+  .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF;
+    z-index: 101; }
+  .button_container.active .middle {
+    opacity: 0;
+    background: #FFF;
+    z-index: 101; }
+  .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF;
+    z-index: 101; }
+  .button_container span {
+    background: #1abc9c;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+    z-index: 101; }
+    .button_container span:nth-of-type(2) {
+      top: 11px; }
+    .button_container span:nth-of-type(3) {
+      top: 22px; }
+
+.overlay {
+  position: fixed;
+  z-index: 100;
+  background: #1abc9c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 100%;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden; }
+  .overlay.open {
+    opacity: 100;
+    visibility: visible;
+    height: 100%; }
+    .overlay.open li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s; }
+      .overlay.open li:nth-of-type(2) {
+        animation-delay: .4s; }
+      .overlay.open li:nth-of-type(3) {
+        animation-delay: .45s; }
+      .overlay.open li:nth-of-type(4) {
+        animation-delay: .50s; }
+  .overlay nav {
+    position: relative;
+    height: 80%;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Varela Round', serif;
+    font-weight: 400;
+    text-align: center; }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .overlay ul li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0; }
+      .overlay ul li a {
+        display: block;
+        position: relative;
+        color: #FFF;
+        text-decoration: none;
+        overflow: hidden; }
+        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+          width: 100%; }
+        .overlay ul li a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: #FFF;
+          transition: .35s; }

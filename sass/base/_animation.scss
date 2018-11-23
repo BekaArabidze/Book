@@ -41,3 +41,16 @@
         transform: translate(0);
     }
 }
+
+/// NAV Animation
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}

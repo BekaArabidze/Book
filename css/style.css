@@ -51,8 +51,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Varela Round', sans-serif;
   /*font-size: 16px;*/
-  line-height: 2;
-  overflow: hidden; }
+  line-height: 2; }
 
 .but:link, .but:visited {
   font-family: 'Roboto', sans-serif;
@@ -82,7 +81,6 @@ body {
     height: 100vh;
     overflow: hidden; }
   .header__video {
-    width: 100vw;
     background-size: cover;
     background-position: top; }
   .header__logo-box {
@@ -103,7 +101,7 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 4rem;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Varela Round', sans-serif; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;

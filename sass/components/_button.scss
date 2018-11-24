@@ -6,8 +6,7 @@
         text-decoration: none;
         padding: 1.2rem 5rem;
         display: inline-block;
-        // border-radius: 10rem;
-        // border-radius: 1rem;
+        border-radius: 5px;
         font-size: 2rem;
         margin-bottom: 20px;
         animation-name: moveInBottom;
@@ -35,12 +34,12 @@
         padding: 1.2rem 5rem;
         display: inline-block;
         // border-radius: 10rem;
-        // border-radius: 1rem;
+        border-radius: 5px;
         font-size: 2rem;
         margin-bottom: 20px;
-        animation-name: moveInBottom;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+        // animation-name: moveInBottom;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-out;
     }
 
     &--white {
@@ -48,7 +47,7 @@
         color: $primary-color-first;
     }
     &:hover {
-        background-color: $primary-color-first;
+        background-color: $primary-color-third;
         color: $font-white-color;
     }
 }

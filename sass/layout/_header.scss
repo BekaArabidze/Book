@@ -9,6 +9,7 @@
         height: 100vh; 
         overflow: hidden;
         
+        
     }
 
 
@@ -16,9 +17,10 @@
     // MOBILE SURATI IQNEBA ==================================
 
     &__video {
-        width: 100vw; /// AR gaketebula gverdit isev aqvs.es ase iyos axla da mere MEDIAS rom gamoviyeneb mshin iq shevcvalot da es "width: 100vw;" mashin wamushalot
+        width: 100%; /// AR gaketebula gverdit isev aqvs.es ase iyos axla da mere MEDIAS rom gamoviyeneb mshin iq shevcvalot da es "width: 100vw;" mashin wamushalot
         background-size: cover;
         background-position: top;
+        // height: 100vw;
         /// Es surati droebi iyos
         background-image: url(/img/background.jpg);
         background-repeat: no-repeat;
@@ -43,6 +45,12 @@
         @include center;
         // border: 1px solid red;
         text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+    .header__video {
+        height: 100vh;
     }
 }
 

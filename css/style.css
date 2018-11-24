@@ -39,6 +39,7 @@ body {
   text-decoration: none;
   padding: 1.2rem 5rem;
   display: inline-block;
+  border-radius: 5px;
   font-size: 2rem;
   margin-bottom: 20px;
   animation-name: moveInBottom;
@@ -59,18 +60,16 @@ body {
   text-decoration: none;
   padding: 1.2rem 5rem;
   display: inline-block;
+  border-radius: 5px;
   font-size: 2rem;
-  margin-bottom: 20px;
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  margin-bottom: 20px; }
 
 .but1--white {
   background-color: #ffffff;
   color: #FF6473; }
 
 .but1:hover {
-  background-color: #FF6473;
+  background-color: #455D7A;
   color: #ffffff; }
 
 .header {
@@ -81,7 +80,7 @@ body {
     height: 100vh;
     overflow: hidden; }
   .header__video {
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     background-position: top;
     background-image: url(/img/background.jpg);
@@ -98,6 +97,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+@media (max-width: 500px) {
+  .header__video {
+    height: 100vh; } }
 
 .heading-primary {
   color: #ffffff;
@@ -270,13 +273,38 @@ h1 {
           transition: .35s; }
 
 .section {
-  height: 40vh;
+  height: 30vh;
   background-color: #233142;
   position: relative; }
   .section__registration-box {
     font-family: 'Varela Round', sans-serif;
     position: absolute;
-    padding: 9rem 0; }
+    display: block;
+    max-width: 90%;
+    top: 20rem;
+    left: 2rem; }
+    .section__registration-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%; }
+      .section__registration-box ul li {
+        display: block;
+        height: calc(100% / 4);
+        min-height: 50px;
+        position: relative;
+        float: left;
+        padding: 0rem 2.5rem 0rem 2.5rem; }
+        .section__registration-box ul li input {
+          width: 100%;
+          border-radius: 5px; }
+        .section__registration-box ul li input[type=text] {
+          padding: 1rem;
+          font-size: 2rem; }
+        .section__registration-box ul li input[type=text]:focus {
+          border: 3px solid #455D7A; }
 
 .section-textbox {
   color: #ffffff;

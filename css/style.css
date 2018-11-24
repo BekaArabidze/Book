@@ -81,8 +81,11 @@ body {
     height: 100vh;
     overflow: hidden; }
   .header__video {
+    width: 100vw;
     background-size: cover;
-    background-position: top; }
+    background-position: top;
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat; }
   .header__logo-box {
     position: absolute;
     left: 4rem;

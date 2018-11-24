@@ -2,11 +2,13 @@
     height: 100vh;
     position: relative;
     background-color: gray;
+    
 
 
     &__video-box {
         height: 100vh; 
         overflow: hidden;
+        
     }
 
 
@@ -14,17 +16,14 @@
     // MOBILE SURATI IQNEBA ==================================
 
     &__video {
-        // width: 100vw;
+        width: 100vw; /// AR gaketebula gverdit isev aqvs.es ase iyos axla da mere MEDIAS rom gamoviyeneb mshin iq shevcvalot da es "width: 100vw;" mashin wamushalot
         background-size: cover;
         background-position: top;
+        /// Es surati droebi iyos
+        background-image: url(/img/background.jpg);
+        background-repeat: no-repeat;
+        /// Es surati droebi iyos
     }
-
-    // &__nav-box{
-    //     position:absolute;
-    //     top: 10%;
-    //     width: 50%;
-    //     height: auto;
-    // }
 
     &__logo-box {
         position: absolute;

@@ -22,7 +22,7 @@
         /// Es surati droebi iyos
         background-image: url(/img/background.jpg);
         background-repeat: no-repeat;
-        /// Es surati droebi iyos
+        /// Es surati droebit iyos
     }
 
     &__logo-box {
@@ -40,7 +40,7 @@
         top: 50%;
         left: 50%;
         // max-width:600px;
-        transform: translate(-50%, -50%);
+        @include center;
         // border: 1px solid red;
         text-align: center;
     }

@@ -176,7 +176,7 @@ h1 {
             a {
                 display: block;
                 position: relative;
-                color: $color-link;
+                color: $color-active;
                 text-decoration: none;
                 overflow: hidden;
 
@@ -194,7 +194,7 @@ h1 {
                     width: 0%;
                     transform: translateX(-50%);
                     height: 3px;
-                    background: $color-link;
+                    background: $color-active;
                     transition: .35s;
                 }
             }

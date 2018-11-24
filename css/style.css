@@ -1,27 +1,7 @@
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1.5rem); }
-  100% {
-    opacity: 2;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem); }
+    transform: translateY(4rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
@@ -70,6 +50,26 @@ body {
   color: #FF6473; }
 
 .but:hover {
+  background-color: #FF6473;
+  color: #ffffff; }
+
+.but1:link, .but1:visited {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.2rem 5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+.but1--white {
+  background-color: #ffffff;
+  color: #FF6473; }
+
+.but1:hover {
   background-color: #FF6473;
   color: #ffffff; }
 
@@ -268,3 +268,33 @@ h1 {
           height: 3px;
           background: #FFF;
           transition: .35s; }
+
+.section {
+  height: 40vh;
+  background-color: #233142;
+  position: relative; }
+  .section__registration-box {
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    padding: 9rem 0; }
+
+.section-textbox {
+  color: #ffffff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  font-family: 'Varela Round', sans-serif;
+  text-align: left;
+  position: absolute;
+  top: 4rem;
+  left: 4rem; }
+  .section-textbox--main {
+    display: block;
+    font-size: 4rem;
+    position: relative; }
+    .section-textbox--main::first-letter {
+      color: #FF6473; }
+  .section-textbox--sub {
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    top: .5rem; }

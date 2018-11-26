@@ -326,7 +326,7 @@ h1 {
     top: .5rem; }
 
 .blogers {
-  height: 70vh;
+  height: 100vh;
   position: relative; }
   .blogers .blogers-textbox {
     color: #233142;
@@ -335,7 +335,7 @@ h1 {
     font-family: 'Varela Round', sans-serif;
     text-align: center;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%); }
     .blogers .blogers-textbox--main {
@@ -353,23 +353,55 @@ h1 {
       top: .5rem;
       letter-spacing: 1px; }
 
-.griding {
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 10rem;
-  grid-template-areas: "first second third";
-  border: 1px solid red; }
-  .griding .item-a {
-    grid-area: first; }
-  .griding .item-b {
-    grid-area: second; }
-  .griding .item-c {
-    grid-area: third; }
-  .griding__item {
-    width: auto;
-    height: auto; }
-    .griding__item img {
-      height: 100%;
-      width: 100%; }
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
+  .col:first-child {
+    margin-left: 0; }
+  .col .composition {
+    width: 55%;
+    height: auto;
+    position: relative;
+    border: 1px solid red; }
+    .col .composition__photo {
+      width: auto;
+      height: 25rem;
+      border-radius: 10px; }
+
+/*  GROUPING  */
+.group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+  .group:before {
+    content: "";
+    display: table; }
+  .group:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+  width: 100%; }
+
+.span_2_of_3 {
+  width: 66.13%; }
+
+.span_1_of_3 {
+  width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+  .span_3_of_3,
+  .span_2_of_3,
+  .span_1_of_3 {
+    width: 100%; } }

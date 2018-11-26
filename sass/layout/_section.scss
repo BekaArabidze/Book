@@ -90,3 +90,82 @@
     }
 
 }
+
+.blogers {
+    height: 70vh;
+    position: relative;
+
+    .blogers-textbox {
+        color: $primary-color-second-font;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        @include center;
+
+        
+    
+        &--main {
+            display: block;
+            font-size: 4rem;
+            position: relative;
+            letter-spacing: 10px;
+            font-weight: 400;
+
+    
+            &::first-letter {
+                color: $primary-color-first;
+                
+            }
+        }
+    
+        &--sub {
+            display: block;
+            font-size: 2rem;
+            position: relative;
+            top: .5rem;
+            letter-spacing: 1px;
+        }
+    
+    }
+}
+
+.griding {
+    display:grid;
+    position: relative;
+    // margin-top: 40%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10rem;
+    grid-template-areas: 
+    "first second third";
+    border: 1px solid red;
+
+    .item-a {
+        grid-area: first;
+        
+    }
+    .item-b {
+        grid-area: second;
+    }
+    .item-c {
+        grid-area: third;
+    }
+
+    &__item {
+        width: 50%;
+        height: auto;
+        
+
+
+        img {
+            height: 100%;
+            width:100%;
+
+
+        }
+    }
+}

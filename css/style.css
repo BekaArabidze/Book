@@ -83,6 +83,8 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
+    object-fit: cover;
+    height: 100vh;
     background-image: url(/img/background.jpg);
     background-repeat: no-repeat; }
   .header__logo-box {

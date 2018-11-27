@@ -351,5 +351,63 @@ h1 {
       position: relative;
       top: .5rem;
       letter-spacing: 1px; }
-
-/*  SECTIONS  */
+  .blogers .wrapper {
+    position: relative;
+    margin-top: 20rem;
+    margin-left: 25rem;
+    float: left;
+    left: 0px;
+    max-width: 1620px;
+    margin-bottom: 10px;
+    background-color: red; }
+    .blogers .wrapper .left1 {
+      position: relative;
+      float: left;
+      left: 5px;
+      width: 530px;
+      height: 530px; }
+      .blogers .wrapper .left1 img {
+        max-width: 100%;
+        height: 53rem;
+        object-fit: cover;
+        border-radius: 30px; }
+      .blogers .wrapper .left1 p {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 400;
+        font-size: 2.5rem;
+        margin-left: 15px;
+        margin-top: 5px; }
+    .blogers .wrapper .left2 {
+      position: relative;
+      float: left;
+      left: 15px;
+      width: 530px;
+      height: 530px; }
+      .blogers .wrapper .left2 img {
+        max-width: 100%;
+        height: 53rem;
+        object-fit: cover;
+        border-radius: 30px; }
+      .blogers .wrapper .left2 p {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 400;
+        font-size: 2.5rem;
+        margin-left: 15px;
+        margin-top: 5px; }
+    .blogers .wrapper .left3 {
+      position: relative;
+      float: left;
+      left: 25px;
+      width: 530px;
+      height: 530px; }
+      .blogers .wrapper .left3 img {
+        width: 100%;
+        height: 53rem;
+        object-fit: cover;
+        border-radius: 30px; }
+      .blogers .wrapper .left3 p {
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 400;
+        font-size: 2.5rem;
+        margin-left: 15px;
+        margin-top: 5px; }

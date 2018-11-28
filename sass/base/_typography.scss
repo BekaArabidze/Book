@@ -3,5 +3,15 @@ body {
     font-family: 'Varela Round', sans-serif;
     // font-weight: 300;
     /*font-size: 16px;*/
-    line-height: 2;
+    line-height: 2; 
+}
+
+
+.commertial--main{
+    font-weight: bold;
+    font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1900 - 700)))!important;
+}
+ 
+.commertial--sub{
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700)))!important;
 }

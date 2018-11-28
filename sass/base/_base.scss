@@ -3,13 +3,22 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
+    box-sizing: inherit; 
+} 
 
 html {
-    font-size: 62.5%;
-}
+    font-size: 62.5%; 
+} 
 
 body {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    // scroll-snap-type: mandatory;
+    // scroll-snap-points-y: repeat(100vh);
+    // scroll-snap-type: y mandatory;
 }
+
+
+// section{
+//     scroll-snap-align: start;
+     
+// }

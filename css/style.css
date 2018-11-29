@@ -44,16 +44,18 @@ body {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 3px;
   padding: 1.2rem 5rem;
   display: inline-block;
   border-radius: 5px;
   font-size: 2rem;
   margin-bottom: 20px;
-  -webkit-box-shadow: 1px 1px 4px 3px rgba(2, 2, 2, 0.3);
-  box-shadow: 1px 1px 4px 3px rgba(2, 2, 2, 0.3);
+  -webkit-box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.25);
   animation-name: moveInBottom;
   animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  animation-timing-function: ease-out;
+  transition: all .2s; }
 
 .but--white {
   background-color: #ffffff;
@@ -127,9 +129,7 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    object-fit: cover;
-    background-image: url("/img/hero_temporarry.gif");
-    background-repeat: no-repeat; }
+    object-fit: cover; }
   .header__logo-box {
     position: absolute;
     left: 4rem;

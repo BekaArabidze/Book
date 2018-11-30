@@ -49,17 +49,24 @@
 
 .blogers_section {
 
-    max-width: 340rem;
+    max-width: 180rem;
     margin: 0 auto;
 
     &__grid {
         display: grid;
-        display: flex;
+        // display: flex;
         align-items: center;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
-        
+        grid-gap:30px;
 
+
+    }
+}
+
+@media (min-width: 280px) {
+    .blogers_section{
+        padding:10px;
 
     }
 }

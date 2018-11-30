@@ -98,14 +98,18 @@ body {
       grid-gap: 0; } }
 
 .blogers_section {
-  max-width: 340rem;
+  max-width: 180rem;
   margin: 0 auto; }
   .blogers_section__grid {
     display: grid;
-    display: flex;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr)); }
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    grid-gap: 30px; }
+
+@media (min-width: 280px) {
+  .blogers_section {
+    padding: 10px; } }
 
 .header {
   height: 100vh;
@@ -197,7 +201,7 @@ body {
     background: #FFF;
     z-index: 101; }
   .button_container span {
-    background: #1abc9c;
+    background: rgba(255, 145, 156, 0.824);
     border: none;
     height: 5px;
     width: 100%;
@@ -365,7 +369,7 @@ body {
     backface-visibility: hidden;
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    margin-top: 6rem; }
+    margin-top: 4rem; }
     .blogers_section .blogers-textbox--main {
       display: block;
       font-size: 4rem;
@@ -381,7 +385,7 @@ body {
   .blogers_section__grid {
     width: 100%;
     height: 80vh;
-    margin-top: 7rem; }
+    margin-top: -5rem; }
     .blogers_section__grid__box {
       margin: 0 auto;
       max-width: 100%;
@@ -390,7 +394,7 @@ body {
         width: 100%;
         height: 50rem;
         object-fit: cover;
-        border-radius: 10px; }
+        border-radius: 5px; }
       .blogers_section__grid__box__paragraph {
         font-family: 'Varela Round', sans-serif;
         font-size: 2rem;

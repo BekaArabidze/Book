@@ -77,11 +77,13 @@
         display: block;
         font-size: 9rem;
         letter-spacing: 15px;
+        text-shadow: 2px 1px 3px #071D2B;
         position: relative;
         animation-name: moveInLeft;
         animation-duration: .5s;
         animation-timing-function: ease-out;
         font-weight: bold;
+        
 
         &::first-letter {
             color: $primary-color-first;
@@ -92,11 +94,13 @@
         display: block;
         font-size: 3rem;
         color: rgb(223, 223, 223);
+        text-shadow: 2px 1px 3px #071D2B;
         position: relative;
         letter-spacing: 8px;
         animation-name: moveInRight;
         animation-duration: .5s;
         animation-timing-function: ease-out;
+        
     }
 
 

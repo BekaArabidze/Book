@@ -1,60 +1,100 @@
 .subcription {
-    height: 30vh;
-    // padding: 25rem 0;
+    max-width: 100%;
+    height: 40vh;
     background-color: $primary-color-second;
     position: relative;
-
+    
 
 
     &__registration-box {
         font-family: 'Varela Round', sans-serif;
-        position: absolute;
+
         display: block;
         // padding: 0rem 2rem 0rem 2rem;
-        max-width: 90%;
+        max-width: 100%;
 
-        top: 20rem;
-        left: 2rem;
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0 auto;
-            display: inline-block;
+        input {
+            width: 100%;
+            max-width: 25rem;
+            box-sizing: border-box;
+            border-radius: 5px;
             position: relative;
-            height: 100%;
-
-            li {
-                display: block;
-                // height: 25%;
-                height: calc(100% / 4);
-                min-height: 50px;
-                position: relative;
-                float: left;
-                padding: 0rem 2.5rem 0rem 2.5rem;
-
-                input {
-                    width: 100%;
-                    border-radius: 5px;
-                }
-
-                input[type=text] {
-                    padding: 1rem;
-                    font-size: 2rem;
-
-                }
-
-                input[type=text]:focus {
-                    border: 3px solid $primary-color-third;
-                }
-            }
+            top:-.6rem;
         }
+
+        input[type=text] {
+            padding: 1rem;
+            font-size: 2rem;
+
+        }
+
+
+
+
+
+        // ul {
+        //     list-style: none;
+        //     padding: 0;
+        //     margin: 0 auto;
+        //     display: inline-block;
+        //     position: relative;
+        //     height: 100%;
+        //     width: 100%;
+
+        //     li {
+        //         display: block;
+        //         // height: 25%;
+        //         height: calc(100% / 4);
+        //         min-height: 70px;
+        //         position: relative;
+        //         // float: left;
+        //         display: inline-block;
+        //         padding: 0rem 1rem 0rem 2rem;
+
+                
+        //         // input[type=text]:focus {
+        //         //     border: 1px solid $primary-color-third;
+        //         // }
+        //     }
+        // }
 
 
     }
 
 }
 
+.subcription-textbox {
+    max-width: 100%;
+    max-height:10rem; 
+    color: $font-white-color;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    font-family: 'Varela Round', sans-serif;
+    // text-align: left;
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+    
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        position: relative;
+        
+        &::first-letter {
+            color: $primary-color-first;
+        }
+    }
+
+    &--sub {
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        top: .5rem;
+        left: .2rem;
+    }
+
+}
 
 .commertial_section {
     width: 100%;
@@ -95,38 +135,6 @@
 
 }
 
-
-
-
-
-.subcription-textbox {
-    color: $font-white-color;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    font-family: 'Varela Round', sans-serif;
-    text-align: left;
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-
-    &--main {
-        display: block;
-        font-size: 4rem;
-        position: relative;
-
-        &::first-letter {
-            color: $primary-color-first;
-        }
-    }
-
-    &--sub {
-        display: block;
-        font-size: 2rem;
-        position: relative;
-        top: .5rem;
-    }
-
-}
 
 
 /// 11/29/2018 Little neutrino
@@ -173,27 +181,28 @@
     }
 
     &__grid {
-        width: 100%;
+        max-width: 100%;
         height: 80vh;
-        margin-top: -5rem;
+        margin-top: 4rem;
 
         &__box {
             margin: 0 auto;
             max-width: 100%;
             height: auto;
-            
+
             &__img {
-                width: 100%;
+                max-width: 100%;
                 height: 50rem;
                 object-fit: cover;
                 border-radius: 5px;
-                
+
             }
 
             &__paragraph {
                 font-family: 'Varela Round', sans-serif;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 font-weight: 400;
+
 
             }
         }
@@ -205,12 +214,5 @@
 
 
 }
+
 /// 11/29/2018 Little neutrino
-
-
-
-
-
-
-
-

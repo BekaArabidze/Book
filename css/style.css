@@ -98,7 +98,7 @@ body {
       grid-gap: 0; } }
 
 .blogers_section {
-  max-width: 180rem;
+  max-width: 160rem;
   margin: 0 auto; }
   .blogers_section__grid {
     display: grid;
@@ -109,7 +109,14 @@ body {
 
 @media (min-width: 280px) {
   .blogers_section {
-    padding: 10px; } }
+    padding: 15px; } }
+
+.subcription {
+  max-width: 160rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px));
+  grid-gap: 10px; }
 
 .header {
   height: 100vh;
@@ -159,6 +166,7 @@ body {
     display: block;
     font-size: 9rem;
     letter-spacing: 15px;
+    text-shadow: 2px 1px 3px #071D2B;
     position: relative;
     animation-name: moveInLeft;
     animation-duration: .5s;
@@ -170,6 +178,7 @@ body {
     display: block;
     font-size: 3rem;
     color: #dfdfdf;
+    text-shadow: 2px 1px 3px #071D2B;
     position: relative;
     letter-spacing: 8px;
     animation-name: moveInRight;
@@ -201,7 +210,7 @@ body {
     background: #FFF;
     z-index: 101; }
   .button_container span {
-    background: rgba(255, 145, 156, 0.824);
+    background: #FF6473;
     border: none;
     height: 5px;
     width: 100%;
@@ -286,38 +295,47 @@ body {
           transition: .35s; }
 
 .subcription {
-  height: 30vh;
+  max-width: 100%;
+  height: 40vh;
   background-color: #233142;
   position: relative; }
   .subcription__registration-box {
     font-family: 'Varela Round', sans-serif;
-    position: absolute;
     display: block;
-    max-width: 90%;
-    top: 20rem;
-    left: 2rem; }
-    .subcription__registration-box ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      display: inline-block;
+    max-width: 100%; }
+    .subcription__registration-box input {
+      width: 100%;
+      max-width: 25rem;
+      box-sizing: border-box;
+      border-radius: 5px;
       position: relative;
-      height: 100%; }
-      .subcription__registration-box ul li {
-        display: block;
-        height: calc(100% / 4);
-        min-height: 50px;
-        position: relative;
-        float: left;
-        padding: 0rem 2.5rem 0rem 2.5rem; }
-        .subcription__registration-box ul li input {
-          width: 100%;
-          border-radius: 5px; }
-        .subcription__registration-box ul li input[type=text] {
-          padding: 1rem;
-          font-size: 2rem; }
-        .subcription__registration-box ul li input[type=text]:focus {
-          border: 3px solid #455D7A; }
+      top: -.6rem; }
+    .subcription__registration-box input[type=text] {
+      padding: 1rem;
+      font-size: 2rem; }
+
+.subcription-textbox {
+  max-width: 100%;
+  max-height: 10rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  font-family: 'Varela Round', sans-serif;
+  position: relative;
+  top: 2rem;
+  left: 1rem; }
+  .subcription-textbox--main {
+    display: block;
+    font-size: 4rem;
+    position: relative; }
+    .subcription-textbox--main::first-letter {
+      color: #FF6473; }
+  .subcription-textbox--sub {
+    display: block;
+    font-size: 1.5rem;
+    position: relative;
+    top: .5rem;
+    left: .2rem; }
 
 .commertial_section {
   width: 100%;
@@ -338,27 +356,6 @@ body {
   .commertial_section__second__img {
     width: 80%;
     margin: 0 auto; }
-
-.subcription-textbox {
-  color: #ffffff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  font-family: 'Varela Round', sans-serif;
-  text-align: left;
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-  .subcription-textbox--main {
-    display: block;
-    font-size: 4rem;
-    position: relative; }
-    .subcription-textbox--main::first-letter {
-      color: #FF6473; }
-  .subcription-textbox--sub {
-    display: block;
-    font-size: 2rem;
-    position: relative;
-    top: .5rem; }
 
 .blogers_section {
   width: 100%;
@@ -383,19 +380,19 @@ body {
       top: .5rem;
       letter-spacing: 1px; }
   .blogers_section__grid {
-    width: 100%;
+    max-width: 100%;
     height: 80vh;
-    margin-top: -5rem; }
+    margin-top: 4rem; }
     .blogers_section__grid__box {
       margin: 0 auto;
       max-width: 100%;
       height: auto; }
       .blogers_section__grid__box__img {
-        width: 100%;
+        max-width: 100%;
         height: 50rem;
         object-fit: cover;
         border-radius: 5px; }
       .blogers_section__grid__box__paragraph {
         font-family: 'Varela Round', sans-serif;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 400; }

@@ -10,7 +10,7 @@
         font-family: 'Varela Round', sans-serif;
         // padding: 2rem 2rem 2rem 2rem;
         display: block;
-        
+
         max-width: 100%;
 
 
@@ -58,39 +58,40 @@
                 // }
             }
         }
-    
+
     }
 
 }
 
 /// Subscribe  section made(unfinished)
 
-@media (max-width:600px){
+@media (max-width:600px) {
 
-    .subcription{
+    .subcription {
         .subcription-textbox {
-        
-        
+
+
 
             &--main {
                 font-size: 3rem !important;
                 text-align: center;
             }
+
             &--sub {
                 text-align: center;
-    
+
             }
         }
-    
+
         .subcription__registration-box {
             text-align: center;
-    
-            
+
+
         }
 
     }
-    
-    
+
+
 
 }
 
@@ -101,7 +102,7 @@
     text-transform: uppercase;
     backface-visibility: hidden;
     font-family: 'Varela Round', sans-serif;
-    text-align:left;
+    text-align: left;
     position: relative;
     top: 2rem;
     left: 2rem;
@@ -223,6 +224,7 @@
             margin: 0 auto;
             max-width: 100%;
             height: auto;
+            position: relative;
 
             &__img {
                 max-width: 100%;
@@ -230,15 +232,18 @@
                 object-fit: cover;
                 border-radius: 5px;
                 overflow: hidden;
-
-
-
+                position: relative;
+                background-size: cover;
             }
+
+            
+
             /// IMG shadow hover
             .card-hover {
                 @extend .blogers_section__grid__box__img;
                 @include material-shadow(1);
                 transition: all 250ms;
+
 
                 &:hover {
                     @include material-shadow(4);
@@ -246,6 +251,7 @@
 
                 }
             }
+
             /// IMG shadow hover
 
 
@@ -293,4 +299,3 @@
 
 
 }
-

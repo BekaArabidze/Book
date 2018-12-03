@@ -10,70 +10,101 @@
         font-family: 'Varela Round', sans-serif;
         // padding: 2rem 2rem 2rem 2rem;
         display: block;
-        // padding: 0rem 2rem 0rem 2rem;
+        
         max-width: 100%;
 
-        input {
-            width: 100%;
-            max-width: 25rem;
-            box-sizing: border-box;
-            border-radius: 5px;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: inline-block;
             position: relative;
-            top: -.6rem;
+            height: 100%;
+            width: 100%;
+
+            li {
+                display: block;
+                // height: 25%;
+                height: calc(100% / 4);
+                min-height: 70px;
+                position: relative;
+                // float: left;
+                display: inline-block;
+                padding: 1rem 2rem 0rem 2rem;
+
+
+
+                input {
+                    width: 100%;
+                    max-width: 25rem;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    position: relative;
+                    top: -.7rem;
+
+                }
+
+                input[type=text] {
+                    padding: 1rem;
+                    font-size: 2rem;
+
+                }
+
+
+
+                // input[type=text]:focus {
+                //     border: 1px solid $primary-color-third;
+                // }
+            }
         }
+    
+    }
 
-        input[type=text] {
-            padding: 1rem;
-            font-size: 2rem;
+}
 
+/// Subscribe  section made(unfinished)
+
+@media (max-width:600px){
+
+    .subcription{
+        .subcription-textbox {
+        
+        
+
+            &--main {
+                font-size: 3rem !important;
+                text-align: center;
+            }
+            &--sub {
+                text-align: center;
+    
+            }
         }
-
-
-
-
-
-        // ul {
-        //     list-style: none;
-        //     padding: 0;
-        //     margin: 0 auto;
-        //     display: inline-block;
-        //     position: relative;
-        //     height: 100%;
-        //     width: 100%;
-
-        //     li {
-        //         display: block;
-        //         // height: 25%;
-        //         height: calc(100% / 4);
-        //         min-height: 70px;
-        //         position: relative;
-        //         // float: left;
-        //         display: inline-block;
-        //         padding: 0rem 1rem 0rem 2rem;
-
-
-        //         // input[type=text]:focus {
-        //         //     border: 1px solid $primary-color-third;
-        //         // }
-        //     }
-        // }
-
+    
+        .subcription__registration-box {
+            text-align: center;
+    
+            
+        }
 
     }
+    
+    
 
 }
 
 .subcription-textbox {
     max-width: 100%;
-    max-height: 10rem;
+    // max-height: 10rem;
     color: $font-white-color;
     text-transform: uppercase;
     backface-visibility: hidden;
     font-family: 'Varela Round', sans-serif;
-    // text-align: left;
+    text-align:left;
     position: relative;
     top: 2rem;
-    left: 1rem;
+    left: 2rem;
 
 
     &--main {
@@ -88,13 +119,16 @@
 
     &--sub {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         position: relative;
         top: .5rem;
         left: .2rem;
     }
 
 }
+
+/// Subscribe  section made(unfinished)
+
 
 .commertial_section {
     width: 100%;
@@ -137,7 +171,6 @@
 
 
 
-/// 11/29/2018 Little neutrino
 
 .blogers_section {
     width: 100%;
@@ -196,9 +229,25 @@
                 height: 50rem;
                 object-fit: cover;
                 border-radius: 5px;
-                overflow:hidden;
+                overflow: hidden;
+
+
 
             }
+            /// IMG shadow hover
+            .card-hover {
+                @extend .blogers_section__grid__box__img;
+                @include material-shadow(1);
+                transition: all 250ms;
+
+                &:hover {
+                    @include material-shadow(4);
+                    transform: scale(1.02);
+
+                }
+            }
+            /// IMG shadow hover
+
 
             &__paragraph {
                 font-family: 'Varela Round', sans-serif;
@@ -225,7 +274,7 @@
         //     transition: bottom .3s, opacity .3s cubic-bezier(.33, .66, .66, 1);
 
 
-            
+
         // }
 
         // &:hover {
@@ -235,7 +284,7 @@
         //         bottom: 120px;
         //     }
 
-            
+
         // }
 
 
@@ -245,4 +294,3 @@
 
 }
 
-/// 11/29/2018 Little neutrino

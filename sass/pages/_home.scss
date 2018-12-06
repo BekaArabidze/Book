@@ -132,12 +132,11 @@
 
 .commertial_section {
     width: 100%;
-    height: 200vh;
+    height: 160vh;
 
-    &__first,
-    &__second {
+    &__first{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
 
         &__img {
             width: 80%;
@@ -152,6 +151,8 @@
 
 
     &__second {
+        width: 100%;
+        height: 50vh; 
 
         &__text {
             max-width: 50rem;
@@ -163,8 +164,6 @@
             width: 80%;
             margin: 0 auto;
         }
-
-
     }
 
 }

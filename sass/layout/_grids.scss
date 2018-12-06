@@ -49,7 +49,7 @@
 
 .blogers_section {
 
-    max-width: $max-width-for-bloggers;
+    max-width: $max-width;
     margin: 0 auto;
 
     &__grid {
@@ -67,7 +67,7 @@
 
 
 .subcription {
-    max-width: $max-width-for-subscription;
+    max-width: $max-width;
     display: grid;
     justify-items: center;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
@@ -79,9 +79,8 @@
 
 
 .footer {
-    max-width: 100%;
+    max-width: $max-width-for-footer;
     display: grid;
-    
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
 }

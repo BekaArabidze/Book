@@ -67,10 +67,21 @@
 
 
 .subcription {
-    max-width: 80%;
+    max-width: $max-width-for-subscription;
     display: grid;
     justify-items: center;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 
-
 }
+
+
+/// Footer grid
+
+
+.footer-section {
+    max-width: $max-width-for-footer;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+}
+
+

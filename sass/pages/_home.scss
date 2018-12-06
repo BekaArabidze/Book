@@ -21,7 +21,7 @@
             margin: 0 auto;
             display: inline-block;
             position: relative;
-            height: 100%;
+            // height: 100%; es sheidzleba gadaswordes
             width: 100%;
 
             li {
@@ -213,8 +213,8 @@
 
     &__grid {
         max-width: 100%;
-        height: 80vh;
-        margin-top: 4rem;
+        // height: 70vh;
+        margin-top: 10rem;
         position: relative;
 
         &__box {

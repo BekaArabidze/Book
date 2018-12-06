@@ -1,0 +1,50 @@
+.footer-section {
+    max-width: 100%;
+    height: 40vh;
+    position: relative;
+    background-color: $primary-color-second;
+
+    &__box {
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        
+
+        &__pharagraph {
+            color: $font-white-color;
+            backface-visibility: hidden;
+            font-family: 'Varela Round', sans-serif;
+            margin-top: 2rem;
+
+
+            &--main {
+                display: block;
+                font-size: 2.5rem;
+                position: relative;
+                font-weight: 400;
+    
+    
+                &::first-letter {
+                    color: $primary-color-first;
+    
+                }
+            }
+    
+            &--sub {
+                display: block;
+                font-size: 1rem;
+                position: relative;
+                top: .5rem;
+                letter-spacing: 1px;
+            }
+        }
+
+        
+
+            
+        
+    }
+
+
+
+}

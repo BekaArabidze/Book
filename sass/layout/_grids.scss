@@ -78,9 +78,11 @@
 /// Footer grid
 
 
-.footer-section {
-    max-width: $max-width-for-footer;
+.footer {
+    max-width: 100%;
     display: grid;
+    
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
 }
 

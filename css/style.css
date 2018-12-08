@@ -234,9 +234,6 @@ body {
     letter-spacing: 15px;
     text-shadow: 2px 1px 3px #071D2B;
     position: relative;
-    animation-name: moveInLeft;
-    animation-duration: .5s;
-    animation-timing-function: ease-out;
     font-weight: bold; }
     .heading-primary--main::first-letter {
       color: #FF6473; }
@@ -246,10 +243,62 @@ body {
     color: #dfdfdf;
     text-shadow: 2px 1px 3px #071D2B;
     position: relative;
-    letter-spacing: 8px;
-    animation-name: moveInRight;
-    animation-duration: .5s;
-    animation-timing-function: ease-out; }
+    letter-spacing: 8px; }
+
+.registration {
+  height: 50vh;
+  position: relative;
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.5) 0%, rgba(48, 78, 84, 0.4) 100%), url(/img/Registration.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover; }
+  .registration__logo-box {
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+    z-index: 50; }
+  .registration__logo {
+    height: 4rem; }
+  .registration__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .registration__text-box__list {
+      list-style-type: none;
+      position: relative; }
+      .registration__text-box__list__item {
+        display: inline-block; }
+        .registration__text-box__list__item:not(:last-child) {
+          margin-right: 5rem; }
+      .registration__text-box__list__link:link, .registration__text-box__list__link:visited {
+        text-decoration: none;
+        display: inline-block; }
+
+.primary-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 4rem;
+  font-family: 'Varela Round', sans-serif; }
+  .primary-text--main {
+    display: block;
+    font-size: 9rem;
+    letter-spacing: 10px;
+    text-shadow: 2px 1px 3px #071D2B;
+    position: relative;
+    font-weight: bold; }
+    .primary-text--main::first-letter {
+      color: #FF6473; }
+  .primary-text--sub {
+    display: block;
+    font-size: 3rem;
+    color: #dfdfdf;
+    text-shadow: 2px 1px 3px #071D2B;
+    position: relative;
+    letter-spacing: 8px; }
 
 .button_container {
   position: fixed;

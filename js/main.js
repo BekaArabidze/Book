@@ -1,11 +1,13 @@
 
-
+//=== === === HEADER ANIMATION
 $('#toggle').click(function () {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
 });
 
 
+//=== === === HEADER ANIMATION
+ 
 TweenMax.from('.heading-primary--main',2,{
     opacity:0,
     ease: Back.easeOut.config(1.3), 
@@ -26,7 +28,10 @@ TweenMax.from('.blogers_section__grid__box__paragraph',2,{
 
 // TweenMax.from('.blogers_section__grid__box__img ',2.5,{opacity:0 ,ease: Power4.easeOut, y: -500 });
 
-/// Bloggers  aniamtion
+
+
+
+//=== === === BLOGER ANIMATION
 TweenMax.from('.blogers-textbox--main',2,{
     opacity:0,
     ease: Back.easeOut.config(1.3),
@@ -38,5 +43,9 @@ TweenMax.from('.blogers-textbox--sub',2,{
     ease: Back.easeOut.config(1.3),
     x: 300 
 });
+
+
+
+
 
 

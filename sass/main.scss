@@ -2,20 +2,21 @@
 @import "abstracts/function";
 @import "abstracts/mixins";
 @import "abstracts/variables";
-@import "abstracts/media";
+@import "abstracts/media"; 
 /// ABSTRACTS
-
-
+   
+    
+/// BASE      
+@import "base/animation";    
+@import "base/base"; 
+@import "base/typography";    
+@import "base/utilities";  
 /// BASE 
-@import "base/animation";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-/// BASE 
 
-
+ 
 /// COMPONENTS 
 @import "components/button";
+@import "components/scroll_down";
 /// COMPONENTS  
 
 

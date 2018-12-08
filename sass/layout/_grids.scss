@@ -1,6 +1,6 @@
 // === === === ===  commertial SECTIONS GRIDS
 .commertial_section {
-    max-width: 140rem;
+    max-width: $max-width;
     margin: 0 auto;
 
     &__first {
@@ -26,10 +26,10 @@
 
 @media (min-width: 280px) {
     .commertial_section {
-        max-width: 140rem;
-        margin: 0 auto;
+        max-width: $max-width;
+        margin: 0 4rem;
 
-        &__first {
+        &__first { 
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             grid-gap: 0;
@@ -45,7 +45,7 @@
 
 
 
-/// Blogers grid
+//=== === === === Blogers grid
 
 .blogers_section {
 
@@ -75,7 +75,7 @@
 }
 
 
-/// Footer grid
+//=== === === === Footer grid
 
 
 .footer {

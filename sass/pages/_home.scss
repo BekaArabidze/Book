@@ -19,7 +19,11 @@
     max-width: 100%;
     background-color: $primary-color-second;
     position: relative;
-
+    background: linear-gradient(0deg, rgba(2, 0, 36, .5) 0%, rgba(29, 47, 51, 0.4) 100%),url(https://ak1.picdn.net/shutterstock/videos/20376331/thumb/1.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: top; 
+    background-attachment: fixed;
 
 
 

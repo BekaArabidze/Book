@@ -187,12 +187,12 @@
                     &:hover {
                         color: $primary-color-second-hover;
                     }
-                    // &::first-letter {
-                    //     color: $primary-color-first;
-                    // }
+                    &::first-letter {
+                        color: $primary-color-first;
+                    }
                 }
             }
-        }
+        } 
     }
 }
 

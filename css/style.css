@@ -325,6 +325,7 @@ body {
   height: 50vh;
   position: relative;
   background: linear-gradient(0deg, rgba(2, 0, 36, 0.5) 0%, rgba(48, 78, 84, 0.4) 100%), url(/img/Registration.jpeg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -496,6 +497,8 @@ body {
         padding-top: 2rem; }
         .search-box__list__item__link:link:hover, .search-box__list__item__link:visited:hover {
           color: #38506b; }
+        .search-box__list__item__link:link::first-letter, .search-box__list__item__link:visited::first-letter {
+          color: #FF6473; }
 
 @media (max-width: 1500px) {
   .search-box {

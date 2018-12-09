@@ -46,6 +46,7 @@ toggle
         y:-11 
     },"slice")
 
+        .to(toggleMenuBtn, 0.25, {rotation:360}, "cross += .2")
         .to(toggleMenuBtn_Ln_1, 0.25, {rotation:45}, "cross += .2")
         .to(toggleMenuBtn_Ln_3, 0.25, {rotation:-45}, "cross += .2");
     

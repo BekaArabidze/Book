@@ -1,7 +1,11 @@
 //imports
 // import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from ".././node_modules/gsap/all";
 
+
+
+//=== === === === === ===        === === === === === ===//
 //=== === === === === === JQUERY === === === === === ===//
+//=== === === === === ===        === === === === === ===//
 
 //=== === === HEADER ANIMATION
 $('#toggleMenuBtn').click(function () {
@@ -9,11 +13,36 @@ $('#toggleMenuBtn').click(function () {
     $('#overlay').toggleClass('open');
 });
 
+
+$(document).ready(function() {
+  
+    let scrollLink = $('#scrollLink');
+    
+    // Smooth scrolling
+    scrollLink.click(function(e) {
+        e.preventDefault();
+        $('body,html').animate({ 
+            scrollTop: $(this.hash).offset().top
+        }, 1000 ); 
+    });
+});
+
+
+//=== === === === === ===            === === === === === ===//
+//=== === === === === === scroll-out === === === === === ===//
+//=== === === === === ===            === === === === === ===//
+
+ScrollOut({
+    once:true,
+    threshold: .8
+});
+
  
 
 
-
+//=== === === === === ===              === === === === === ===//
 //=== === === === === === GREENSOCK JS === === === === === ===//
+//=== === === === === ===              === === === === === ===//
 
 //greensock
 const tlm = new TimelineMax({});

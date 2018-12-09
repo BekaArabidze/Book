@@ -2,14 +2,11 @@
 
 .button_container {
     position: fixed;
-    // top: 5%;
-    // right: 2%;
     top: 4%;
     right: 3%;
     height: $button-height;
     width: $button-width;
     cursor: pointer;
-    
     transition: opacity .25s ease;
     z-index: 101;
 
@@ -18,25 +15,25 @@
         z-index: 101;
     }
 
-    &.active {
-        .top {
-            transform: translateY(11px) translateX(0) rotate(45deg);
-            background: $color-active;
-            z-index: 101;
-        }
+    // &.active {
+    //     .top {
+    //         transform: translateY(11px) translateX(0) rotate(45deg);
+    //         background: $color-active;
+    //         z-index: 101;
+    //     }
 
-        .middle {
-            opacity: 0;
-            background: $color-active;
-            z-index: 101;
-        }
+    //     .middle {
+    //         opacity: 0;
+    //         background: $color-active;
+    //         z-index: 101;
+    //     }
 
-        .bottom {
-            transform: translateY(-11px) translateX(0) rotate(-45deg);
-            background: $color-active;
-            z-index: 101;
-        }
-    }
+    //     .bottom {
+    //         transform: translateY(-11px) translateX(0) rotate(-45deg);
+    //         background: $color-active;
+    //         z-index: 101;
+    //     }
+    // }
 
     span {
         background: $primary-color-first;

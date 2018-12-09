@@ -376,18 +376,6 @@ body {
   .button_container:hover {
     opacity: .9;
     z-index: 101; }
-  .button_container.active .top {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    background: #FFF;
-    z-index: 101; }
-  .button_container.active .middle {
-    opacity: 0;
-    background: #FFF;
-    z-index: 101; }
-  .button_container.active .bottom {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    background: #FFF;
-    z-index: 101; }
   .button_container span {
     background: #FF6473;
     border: none;

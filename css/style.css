@@ -320,7 +320,7 @@ body {
     position: relative;
     letter-spacing: 8px; }
 
-.registration {
+.header_secondary {
   width: 100%;
   height: 50vh;
   position: relative;
@@ -329,261 +329,45 @@ body {
   background-size: cover;
   background-position: center;
   object-fit: cover; }
-  .registration__logo-box {
+  .header_secondary__logo-box {
     position: absolute;
     left: 4rem;
     top: 4rem;
     z-index: 50; }
-  .registration__logo {
+  .header_secondary__logo {
     height: 4rem; }
-  .registration__text-box {
+  .header_secondary__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    .registration__text-box__list {
+    .header_secondary__text-box__list {
       list-style-type: none;
       position: relative; }
-      .registration__text-box__list__item {
+      .header_secondary__text-box__list__item {
         display: inline-block; }
-        .registration__text-box__list__item:not(:last-child) {
+        .header_secondary__text-box__list__item:not(:last-child) {
           margin-right: 5rem; }
-      .registration__text-box__list__link:link, .registration__text-box__list__link:visited {
+      .header_secondary__text-box__list__link:link, .header_secondary__text-box__list__link:visited {
         text-decoration: none;
         display: inline-block; }
-  .registration .primary-text {
+  .header_secondary .primary-text {
     color: #ffffff;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 4rem;
     font-family: 'Varela Round', sans-serif; }
-    .registration .primary-text--main {
+    .header_secondary .primary-text--main {
       display: block;
       font-size: 6rem;
       letter-spacing: 8px;
       text-shadow: 2px 1px 3px #071D2B;
       position: relative;
       font-weight: bold; }
-      .registration .primary-text--main::first-letter {
+      .header_secondary .primary-text--main::first-letter {
         color: #FF6473; }
-    .registration .primary-text--sub {
-      display: block;
-      font-size: 2.5rem;
-      letter-spacing: 5px;
-      color: #dfdfdf;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative; }
-
-.contact {
-  height: 50vh;
-  position: relative;
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.6) 0%, rgba(48, 78, 84, 0.6) 100%), url(/img/contact.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover; }
-  .contact__logo-box {
-    position: absolute;
-    left: 4rem;
-    top: 4rem;
-    z-index: 50; }
-  .contact__logo {
-    height: 4rem; }
-  .contact__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    .contact__text-box__list {
-      list-style-type: none;
-      position: relative; }
-      .contact__text-box__list__item {
-        display: inline-block; }
-        .contact__text-box__list__item:not(:last-child) {
-          margin-right: 5rem; }
-      .contact__text-box__list__link:link, .contact__text-box__list__link:visited {
-        text-decoration: none;
-        display: inline-block; }
-  .contact .primary-text {
-    color: #ffffff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 4rem;
-    font-family: 'Varela Round', sans-serif; }
-    .contact .primary-text--main {
-      display: block;
-      font-size: 6rem;
-      letter-spacing: 8px;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative;
-      font-weight: bold; }
-      .contact .primary-text--main::first-letter {
-        color: #FF6473; }
-    .contact .primary-text--sub {
-      display: block;
-      font-size: 2.5rem;
-      letter-spacing: 5px;
-      color: #dfdfdf;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative; }
-
-.bookPlace {
-  height: 50vh;
-  position: relative;
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.5) 0%, rgba(48, 78, 84, 0.5) 100%), url(/img/bookplace.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover; }
-  .bookPlace__logo-box {
-    position: absolute;
-    left: 4rem;
-    top: 4rem;
-    z-index: 50; }
-  .bookPlace__logo {
-    height: 4rem; }
-  .bookPlace__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    .bookPlace__text-box__list {
-      list-style-type: none;
-      position: relative; }
-      .bookPlace__text-box__list__item {
-        display: inline-block; }
-        .bookPlace__text-box__list__item:not(:last-child) {
-          margin-right: 5rem; }
-      .bookPlace__text-box__list__link:link, .bookPlace__text-box__list__link:visited {
-        text-decoration: none;
-        display: inline-block; }
-  .bookPlace .primary-text {
-    color: #ffffff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 4rem;
-    font-family: 'Varela Round', sans-serif; }
-    .bookPlace .primary-text--main {
-      display: block;
-      font-size: 6rem;
-      letter-spacing: 8px;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative;
-      font-weight: bold; }
-      .bookPlace .primary-text--main::first-letter {
-        color: #FF6473; }
-    .bookPlace .primary-text--sub {
-      display: block;
-      font-size: 2.5rem;
-      letter-spacing: 5px;
-      color: #dfdfdf;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative; }
-
-.library {
-  height: 50vh;
-  position: relative;
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.5) 0%, rgba(48, 78, 84, 0.5) 100%), url(/img/library.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover; }
-  .library__logo-box {
-    position: absolute;
-    left: 4rem;
-    top: 4rem;
-    z-index: 50; }
-  .library__logo {
-    height: 4rem; }
-  .library__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    .library__text-box__list {
-      list-style-type: none;
-      position: relative; }
-      .library__text-box__list__item {
-        display: inline-block; }
-        .library__text-box__list__item:not(:last-child) {
-          margin-right: 5rem; }
-      .library__text-box__list__link:link, .library__text-box__list__link:visited {
-        text-decoration: none;
-        display: inline-block; }
-  .library .primary-text {
-    color: #ffffff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 4rem;
-    font-family: 'Varela Round', sans-serif; }
-    .library .primary-text--main {
-      display: block;
-      font-size: 6rem;
-      letter-spacing: 8px;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative;
-      font-weight: bold; }
-      .library .primary-text--main::first-letter {
-        color: #FF6473; }
-    .library .primary-text--sub {
-      display: block;
-      font-size: 2.5rem;
-      letter-spacing: 5px;
-      color: #dfdfdf;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative; }
-
-.review {
-  height: 50vh;
-  position: relative;
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.4) 0%, rgba(48, 78, 84, 0.4) 100%), url(/img/review.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover; }
-  .review__logo-box {
-    position: absolute;
-    left: 4rem;
-    top: 4rem;
-    z-index: 50; }
-  .review__logo {
-    height: 4rem; }
-  .review__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-    .review__text-box__list {
-      list-style-type: none;
-      position: relative; }
-      .review__text-box__list__item {
-        display: inline-block; }
-        .review__text-box__list__item:not(:last-child) {
-          margin-right: 5rem; }
-      .review__text-box__list__link:link, .review__text-box__list__link:visited {
-        text-decoration: none;
-        display: inline-block; }
-  .review .primary-text {
-    color: #ffffff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 4rem;
-    font-family: 'Varela Round', sans-serif; }
-    .review .primary-text--main {
-      display: block;
-      font-size: 6rem;
-      letter-spacing: 8px;
-      text-shadow: 2px 1px 3px #071D2B;
-      position: relative;
-      font-weight: bold; }
-      .review .primary-text--main::first-letter {
-        color: #FF6473; }
-    .review .primary-text--sub {
+    .header_secondary .primary-text--sub {
       display: block;
       font-size: 2.5rem;
       letter-spacing: 5px;
@@ -721,6 +505,19 @@ body {
       position: relative; }
       .search-box__list__item:nth-last-child {
         display: block; } }
+
+.loading_screen {
+  background-color: #455D7A;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  z-index: 999; }
+  .loading_screen img {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%; }
 
 .subcription {
   max-width: 100%;

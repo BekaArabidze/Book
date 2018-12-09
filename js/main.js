@@ -1,3 +1,18 @@
+//=== === === === === ===           === === === === === ===//
+//=== === === === === === VANILA JS === === === === === ===//
+//=== === === === === ===           === === === === === ===//
+let loadingScreen = document.querySelector(".loading_screen");
+// let loadingScreen = document.querySelector(".loading_screen");
+
+let loading = window.addEventListener("load", _ =>{
+    document.body.removeChild(loadingScreen);
+});
+
+setTimeout(loading, 3000);
+
+
+
+
 //imports
 // import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from ".././node_modules/gsap/all";
 
@@ -115,7 +130,7 @@ toggleMenuBtn.addEventListener('mouseenter', _ => {
 
 
 
-
+ 
 //=== === === HEADER ANIMATION
 
 TweenMax.from('.heading-primary--main', 2, {
@@ -123,6 +138,13 @@ TweenMax.from('.heading-primary--main', 2, {
     ease: Back.easeOut.config(1.3),
     x: -300
 });
+
+// TweenMax.from('.primary-text--main', 2, {
+//     opacity: 0,
+//     ease: Back.easeOut.config(1.3),
+//     x: -300
+// });
+
 TweenMax.from('.heading-primary--sub', 2, {
     opacity: 0,
     ease: Back.easeOut.config(1.3),

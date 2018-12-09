@@ -74,6 +74,13 @@ body {
 .commertial--sub {
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700))) !important; }
 
+.primary-text--main {
+  font-weight: bold;
+  font-size: calc(35px + (60 - 35) * ((100vw - 300px) / (1600 - 300))) !important; }
+
+.primary-text--sub {
+  font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300))) !important; }
+
 .but:link, .but:visited {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
@@ -261,8 +268,7 @@ body {
 
 .header {
   height: 100vh;
-  position: relative;
-  background-color: gray; }
+  position: relative; }
   .header__video-box {
     height: 100vh;
     overflow: hidden; }
@@ -361,20 +367,18 @@ body {
     font-family: 'Varela Round', sans-serif; }
     .header_secondary .primary-text--main {
       display: block;
-      font-size: 6rem;
       letter-spacing: 8px;
       text-shadow: 2px 1px 3px #071D2B;
-      position: relative;
-      font-weight: bold; }
+      position: relative; }
       .header_secondary .primary-text--main::first-letter {
         color: #FF6473; }
     .header_secondary .primary-text--sub {
       display: block;
-      font-size: 2.5rem;
       letter-spacing: 5px;
       color: #dfdfdf;
       text-shadow: 2px 1px 3px #071D2B;
-      position: relative; }
+      position: relative;
+      margin-top: 1.5rem; }
 
 .button_container {
   position: fixed;
@@ -448,7 +452,7 @@ body {
     .overlay ul li {
       display: block;
       height: 25%;
-      height: calc(100% / 4);
+      height: calc(100% / 6);
       min-height: 50px;
       position: relative;
       opacity: 0; }

@@ -2,7 +2,7 @@
 .header {
     height: 100vh;
     position: relative;
-    background-color: gray;
+
 
 
 
@@ -10,7 +10,8 @@
         height: 100vh;
         overflow: hidden;
 
-        //ES KIDE QMNIS ELEMNTIS WEMODAN :afters ROMELITAC PATARAZE OVERLAY UKETEBS FERIS
+
+        /// ES KIDE QMNIS ELEMNTIS WEMODAN :afters ROMELITAC PATARAZE OVERLAY UKETEBS FERIS
         &::after {
             content: '';
             display: block;
@@ -103,7 +104,7 @@
 
 
 ///   ==== Registration page Header
-.header_secondary { 
+.header_secondary {
     width: 100%;
     height: 50vh;
     position: relative;
@@ -144,7 +145,7 @@
                 }
             }
 
-            &__link { 
+            &__link {
 
                 &:link,
                 &:visited {
@@ -157,40 +158,7 @@
         }
     }
 
-    // &__nav {
-    //     width: 100%;
-    //     height: auto;
-    //     position: relative;
 
-
-    // }
-
-
-    // &__list {
-    //     list-style-type: none;
-    //     position: relative;
-    //     // float: right;
-    //     text-align:right;
-    // }
-
-    // &__item {
-    //     display: inline-block;
-
-    //     &:not(:last-child) {
-    //         margin-right: 2rem;
-    //     }
-    // }
-
-    // &__link{
-    //     &:link,
-    //     &:visited{
-    //         text-decoration: none;
-    //         display: inline-block;
-    //         color: $font-white-color;
-    //         font-size: 2rem;
-
-    //     }
-    // }
 
     .primary-text {
         color: $font-white-color;
@@ -202,11 +170,10 @@
 
         &--main {
             display: block;
-            font-size: 6rem;
             letter-spacing: 8px;
             text-shadow: 2px 1px 3px #071D2B;
             position: relative;
-            font-weight: bold;
+
 
 
 
@@ -218,12 +185,12 @@
 
         &--sub {
             display: block;
-            font-size: 2.5rem;
+            // font-size: 2.5rem;
             letter-spacing: 5px;
             color: rgb(223, 223, 223);
             text-shadow: 2px 1px 3px #071D2B;
             position: relative;
-            
+            margin-top: 1.5rem;
 
 
 
@@ -235,5 +202,3 @@
     }
 
 }
-
-

@@ -163,20 +163,16 @@
     align-content: center;
     align-items: center;
 
-
     &__list {
         list-style-type: none;
         position: relative;
 
-
         &__item {
             display: inline-block;
-
 
             &:not(:last-child) {
                 margin-right: 5rem;
             }
-
 
             &__link {
 
@@ -197,33 +193,20 @@
                 }
             }
         }
-
-
     }
-
-
-
-
 }
 
 @media (max-width:1500px) {
     .search-box {
         text-align: center;
 
-
-
-
         &__list {
             list-style-type: none;
             position: relative;
 
-            &__item {
+            &__item:nth-last-child() {
                 display: block;
-
             }
-
         }
-
-
     }
 }

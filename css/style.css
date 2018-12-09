@@ -719,7 +719,7 @@ body {
     .search-box__list {
       list-style-type: none;
       position: relative; }
-      .search-box__list__item {
+      .search-box__list__item:nth-last-child {
         display: block; } }
 
 .subcription {

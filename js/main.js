@@ -14,16 +14,16 @@ $('#toggleMenuBtn').click(function () {
 });
 
 
-$(document).ready(function() {
-  
+$(document).ready(function () {
+
     let scrollLink = $('#scrollLink');
-    
+
     // Smooth scrolling
-    scrollLink.click(function(e) {
+    scrollLink.click(function (e) {
         e.preventDefault();
-        $('body,html').animate({ 
+        $('body,html').animate({
             scrollTop: $(this.hash).offset().top
-        }, 1000 ); 
+        }, 1000);
     });
 });
 
@@ -33,11 +33,11 @@ $(document).ready(function() {
 //=== === === === === ===            === === === === === ===//
 
 ScrollOut({
-    once:true,
+    once: true,
     threshold: .8
 });
 
- 
+
 
 
 //=== === === === === ===              === === === === === ===//
@@ -62,24 +62,30 @@ const toggle = new TimelineMax({
 
 toggle
     .to(toggleMenuBtn_Ln_2, 0.2, {
-        scaleX:0
+        scaleX: 0
     }, 0)
 
-    .to(toggleMenuBtn_Ln_1, 0.25, { 
-        transformOrigin: "50% 50%", 
-        y:11 
+    .to(toggleMenuBtn_Ln_1, 0.25, {
+        transformOrigin: "50% 50%",
+        y: 11
     }, "slice")
 
     .to(toggleMenuBtn_Ln_3, 0.25, {
-        transformOrigin: "50% 50%", 
-        y:-11 
-    },"slice")
+        transformOrigin: "50% 50%",
+        y: -11
+    }, "slice")
 
-        .to(toggleMenuBtn, 0.25, {rotation:360}, "cross += .2")
-        .to(toggleMenuBtn_Ln_1, 0.25, {rotation:45}, "cross += .2")
-        .to(toggleMenuBtn_Ln_3, 0.25, {rotation:-45}, "cross += .2");
-    
-toggleMenuBtn.addEventListener('click', _ =>{
+    .to(toggleMenuBtn, 0.25, {
+        rotation: 360
+    }, "cross += .2")
+    .to(toggleMenuBtn_Ln_1, 0.25, {
+        rotation: 45
+    }, "cross += .2")
+    .to(toggleMenuBtn_Ln_3, 0.25, {
+        rotation: -45
+    }, "cross += .2");
+
+toggleMenuBtn.addEventListener('click', _ => {
     toggleMenuBtn.classList.toggle("js-x");
     toggle.reversed() ? toggle.play() : toggle.reverse();
 });
@@ -89,68 +95,72 @@ toggleMenuBtn.addEventListener('click', _ =>{
 // == == == ==togle the HOVER animation
 
 const toggleBtnsArray = [toggleMenuBtn_Ln_1,
-                        toggleMenuBtn_Ln_2,
-                        toggleMenuBtn_Ln_3]
+    toggleMenuBtn_Ln_2,
+    toggleMenuBtn_Ln_3
+]
 
-toggleMenuBtn.addEventListener('mouseenter', _ =>{
+toggleMenuBtn.addEventListener('mouseenter', _ => {
     if (toggleMenuBtn.classList.contains("js-x")) {
         return;
     }
     tlm
         .staggerTo(toggleBtnsArray, .10, {
-                                        scaleX: 1.7,
-                                        repeat: 1,
-                                        yoyo: true,
-                                        ease: Power2.easeInOut
-                                    }, 0.125)
+            scaleX: 1.7,
+            repeat: 1,
+            yoyo: true,
+            ease: Power2.easeInOut
+        }, 0.125)
 });
 // == == == ==togle the hover animation
 
 
 
 
-
-
-
-
 //=== === === HEADER ANIMATION
- 
-TweenMax.from('.heading-primary--main',2,{
-    opacity:0,
-    ease: Back.easeOut.config(1.3), 
-    x: -300 
+
+TweenMax.from('.heading-primary--main', 2, {
+    opacity: 0,
+    ease: Back.easeOut.config(1.3),
+    x: -300
 });
-TweenMax.from('.heading-primary--sub',2,{
-    opacity:0,
-    ease: Back.easeOut.config(1.3), 
-    x: 300 
+TweenMax.from('.heading-primary--sub', 2, {
+    opacity: 0,
+    ease: Back.easeOut.config(1.3),
+    x: 300
 });
- 
+
 /// Pharagraph aniamtion
-TweenMax.from('.blogers_section__grid__box__paragraph',2,{
-    opacity:0,
+TweenMax.from('.blogers_section__grid__box__paragraph', 2, {
+    opacity: 0,
     ease: Back.easeOut.config(1.1),
-    y: 100 
+    y: 100
 });
 
 // TweenMax.from('.blogers_section__grid__box__img ',2.5,{opacity:0 ,ease: Power4.easeOut, y: -500 });
 
 
 //=== === === BLOGER ANIMATION
-TweenMax.from('.blogers-textbox--main',2,{
-    opacity:0,
+TweenMax.from('.blogers-textbox--main', 2, {
+    opacity: 0,
     ease: Back.easeOut.config(1.3),
-    x: -300 
+    x: -300
 });
 
-TweenMax.from('.blogers-textbox--sub',2,{
-    opacity:0,
+TweenMax.from('.blogers-textbox--sub', 2, {
+    opacity: 0,
     ease: Back.easeOut.config(1.3),
-    x: 300 
+    x: 300
 });
 
 
-
-
-
-
+/// Registration animation
+// TweenMax.from('.primary-text--main',2,{
+//     opacity:0,
+//     ease: Back.easeOut.config(1.3), 
+//     x: -300 
+// });
+// TweenMax.from('.primary-text--sub',2,{
+//     opacity:0,
+//     ease: Back.easeOut.config(1.3), 
+//     x: 300 
+// });

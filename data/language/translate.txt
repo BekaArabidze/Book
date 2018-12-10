@@ -1,0 +1,12 @@
+{
+    "home-en":{
+        "home" : "Home",
+        "name" : "Name",
+        "surname" : "Surname"
+    },
+    "home-ge":{
+        "home" : "სახლი",
+        "name" : "სახელი",
+        "surname":"გვარი"
+    }
+}

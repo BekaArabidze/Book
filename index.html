@@ -12,7 +12,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="css/hover-min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
 </head>
@@ -43,13 +44,13 @@
         <div class="overlay" id="overlay">
             <nav class="overlay-menu">
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/library.html">Library</a></li>
-                    <li><a href="/book-place.html">Books</a></li>
-                    <li><a href="/book-page(description).html">Book Description</a></li>
-                    <li><a href="/registration.html" >Registration</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a  class="lang"  key="home" href="/index.html">Home</a></li>
+                    <li><a  class="lang"  key="library" href="/library.html">Library</a></li>
+                    <li><a  class="lang"  key="books" href="/book-place.html">Books</a></li>
+                    <li><a  class="lang"  key="book" href="/book-page(description).html">Book</a></li>
+                    <li><a  class="lang"  key="registration" href="/registration.html">Registration</a></li>
+                    <li><a  class="lang"  key="about" href="#">About</a></li>
+                    <li><a  class="lang"  key="contact" href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -58,14 +59,14 @@
 
         <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary--main">Book-site</span>
-                <span class="heading-primary--sub">You should buy here</span>
+                <span class="heading-primary--main lang" key="book-site">Book-site</span>
+                <span class="heading-primary--sub lang" key="you should buy here">You should buy here</span>
             </h1>
-            <a href="#" class="but but--white hvr-grow">Discover</a>
+            <a href="#" class="but but--white hvr-grow  translate lang" id="home-ge"  key="georgian">Discover</a>
         </div>
         <a href="#commertial_section" id="scrollLink">
             <div class="icon_scroll">
-                <div class="scroll_wheel"></div>  
+                <div class="scroll_wheel"></div>
             </div>
         </a>
     </div>
@@ -78,8 +79,8 @@
 
 
     <main>
-        <section class="commertial_section" id="commertial_section" >
-            <div class="commertial_section__first" data-scroll >
+        <section class="commertial_section" id="commertial_section">
+            <div class="commertial_section__first" data-scroll>
                 <img class="commertial_section__first__img " src="img/commertial_1_tablets.svg" alt="">
                 <div class="commertial_section__first__text">
                     <h2 class="commertial_section__first__text commertial--main">heading title</h2>
@@ -91,7 +92,7 @@
 
 
 
-            <div class="commertial_section__second"  data-scroll>
+            <div class="commertial_section__second" data-scroll>
                 <div class="commertial_section__second__text">
                     <h2 class="commertial--main">heading title</h2>
                     <p class="commertial--sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -106,14 +107,14 @@
 
         <section class="subcription">
             <h1 class="subcription-textbox">
-                <span class="subcription-textbox--main">Books are free here!</span>
-                <span class="subcription-textbox--sub">Read almost 100000 books</span>
+                <span class="subcription-textbox--main lang" key="books are free here!">Books are free here!</span>
+                <span class="subcription-textbox--sub lang" key="read almost 100000 books">Read almost 100000 books</span>
             </h1>
             <div class="subcription__registration-box">
                 <ul>
                     <li><input type="text" name="fullname" id="fullname" placeholder="Fullname"> </li>
                     <li><input type="text" name="Emailadress" id="Emailadress" placeholder="Emailadress"> </li>
-                    <li><a href="#" class="but but--white hvr-grow">Subscribe</a></li>
+                    <li><a href="#" class="but but--white hvr-grow translate lang" id="home-en" key="Subscribe">Subscribe</a></li>
                 </ul>
 
 
@@ -123,19 +124,19 @@
 
 
 
-        
+
         <section class="blogers_section">
             <!-- <div class="blogers_section__line" data-scroll></div> -->
             <h1 class="blogers-textbox">
-                <span class="blogers-textbox--main">Our popular blogers</span>
+                <span class="blogers-textbox--main lang" key="our popular blogers">Our popular blogers</span>
 
-                <span class="blogers-textbox--sub">Read with us,write with us,dream with us</span>
+                <span class="blogers-textbox--sub lang" key="read with us,write with us,dream with us">Read with us,write with us,dream with us</span>
             </h1>
             <div class="blogers_section__grid">
                 <div class="blogers_section__grid__box">
 
                     <img class="blogers_section__grid__box__img   card-hover" src="/img/pexels-photo-428333.jpeg" alt="">
-                    <p class="blogers_section__grid__box__paragraph">Vakaki Kabe</p>
+                    <p class="blogers_section__grid__box__paragraph lang"  key="Vakaki Kabe">Vakaki Kabe</p>
                     <!-- <div class="blogers_section__grid__card-info">
                             Vakaki Kabe
                         </div> -->
@@ -143,12 +144,12 @@
 
                 <div class="blogers_section__grid__box">
                     <img class="blogers_section__grid__box__img   card-hover" src="/img/pexels-photo-705821.jpeg" alt="">
-                    <p class="blogers_section__grid__box__paragraph">Mari Meburishvili</p>
+                    <p class="blogers_section__grid__box__paragraph lang"  key="Mari Meburishvili">Mari Meburishvili</p>
                 </div>
 
                 <div class="blogers_section__grid__box">
                     <img class="blogers_section__grid__box__img  card-hover" src="img/pexels-photo-91227.jpeg" alt="">
-                    <p class="blogers_section__grid__box__paragraph"> Jonson Antony</p>
+                    <p class="blogers_section__grid__box__paragraph lang"  key="Jonson Antony"> Jonson Antony</p>
                 </div>
             </div>
 
@@ -168,41 +169,41 @@
         </div>
 
         <div class="footer__grid-box">
-            <button class="translate" id="home-en">English</button>
+            <!-- <button class="translate" id="home-en">English</button>
             <button class="translate" id="home-ge">Georgian</button>
-         
+
             <ul>
                 <li class="lang" key="home">Home</li>
-                <li class="lang"  key="name">Name</li>
-                <li class="lang"  key="surname">Surname</li>
-            </ul>
+                <li class="lang" key="name">Name</li>
+                <li class="lang" key="surname">Surname</li>
+            </ul> -->
         </div>
 
         <div class="footer__grid-box">
-                
-                <ul class="footer__list">
-                    <li class="footer__item"><a class="footer__link" href="#">
+
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">
                         <span class="footer__icon--1">
-                                <i class="fab fa-facebook"></i>
+                            <i class="fab fa-facebook"></i>
                         </span>
-    
+
                     </a></li>
-                    <li class="footer__item"><a class="footer__link" href="#">
-    
-                        <span class="footer__icon--2" >
+                <li class="footer__item"><a class="footer__link" href="#">
+
+                        <span class="footer__icon--2">
                             <i class="fab fa-instagram"></i>
                         </span>
-                        
-    
+
+
                     </a></li>
-                    <li class="footer__item"><a class="footer__link" href="#">
+                <li class="footer__item"><a class="footer__link" href="#">
                         <span class="footer__icon--3">
-                                <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-linkedin-in"></i>
                         </span>
-                        
-                    
+
+
                     </a></li>
-                </ul>
+            </ul>
         </div>
 
 
@@ -216,9 +217,11 @@
 
     <!-- jQuerry.JS -->
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <!-- <script src="https://vjs.zencdn.net/7.3.0/video.js"></script> -->
 
     <!-- GREENSOCK.JS -->
@@ -228,7 +231,7 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
 
-    <script type="module"  src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

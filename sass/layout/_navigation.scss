@@ -96,7 +96,7 @@
         height: 80%;
         top: 45%;
         transform: translateY(-50%);
-        font-size: 50px;
+        font-size: 5rem;
         font-family: 'Varela Round', serif;
         font-weight: 400;
         text-align: center;
@@ -199,6 +199,8 @@
 @media (max-width:1500px) {
     .search-box {
         text-align: center;
+        padding: .3rem;
+
 
         &__list {
             list-style-type: none;

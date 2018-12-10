@@ -1,12 +1,45 @@
 {
     "home-en":{
         "home" : "Home",
-        "name" : "Name",
-        "surname" : "Surname"
+        "library" : "Library",
+        "books" : "Books",
+        "book" : "Book",
+        "registration" : "Registration",
+        "about" : "About",
+        "contact" : "Contact",
+        "book-site" : "Book-site",
+        "you should buy here" : "You should buy here",
+        "georgian" : "Discover",
+        "books are free here!" : "Books are free here!",
+        "read almost 100000 books" : "Read almost 100000 books",
+        "our popular blogers" : "Our popular blogers",
+        "read with us,write with us,dream with us" : "Read with, us,write with us,dream with us",
+        "Vakaki Kabe" : "Vakaki Kabe",
+        "Mari Meburishvili" : "Mari Meburishvili",
+        "Jonson Antony" : "Jonson Antony",
+        "Subscribe" : "Subscribe"
+
+        
+
     },
     "home-ge":{
         "home" : "სახლი",
-        "name" : "სახელი",
-        "surname":"გვარი"
+        "library" : "ბიბლიოთეკა",
+        "books" : "წიგნები",
+        "book" : "წიგნი",
+        "registration" : "რეგისტრაცია",
+        "about" : "ჩვენ შესახებ",
+        "contact" : "კონტაქტი",
+        "book-site" : "წიგნები",
+        "you should buy here" : "შენ აქ უნდა იყიდო",
+        "georgian" : "აღმოაჩინე",
+        "books are free here!" : "წიგნები აქ უფასოა",
+        "read almost 100000 books" : "წაიკითხე თითქმის 100000 წიგნი",
+        "our popular blogers" : "პოპულარული ბლოგერები",
+        "read with us,write with us,dream with us" : "წაიკითხე,წერე და იოცნებე ჩვენთან ერთად",
+        "Vakaki Kabe" : "ვაკაკი კაბე",
+        "Mari Meburishvili" : "მარი მებურიშვილი",
+        "Jonson Antony" : "ჯონსონ ანტონი",
+        "Subscribe" : "ინგლისურად"
     }
 }

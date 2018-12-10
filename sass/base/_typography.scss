@@ -8,7 +8,7 @@ body {
     line-height: 2;
 }
 
-
+/// === === === === COMETRIAL SECTION FONT FONT CALC
 .commertial--main {
     font-weight: bold;
     font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
@@ -17,11 +17,42 @@ body {
 .commertial--sub {
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
 }
+/// === === === === COMETRIAL SECTION FONT FONT CALC
 
+
+/// === === === === All HEADER FONT FONT CALC
 .primary-text--main {
     font-weight: bold;
     font-size: calc(35px + (60 - 35) * ((100vw - 300px) / (1600 - 300))) !important;
 }
+
+
 .primary-text--sub {
-    font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
+/// === === === === All HEADER FONT FONT CALC
+
+
+
+
+/// === === === === All FOOTER FONT SIZE CALC
+.footer-primary--main{
+    font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+/// === === === === All FOOTER FONT FONR CALC
+
+
+
+/// === === === === MAIN NAVIGATION FONT CALC
+.overlay-menu{
+    font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+/// === === === === MAIN NAVIGATION FONT CALC
+
+
+
+/// === === === === BOOK GENRE NAVIGATION FONT CALC
+.search-box__list__item__link{
+    font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+/// === === === === BOOK GENRE NAVIGATION FONT CALC

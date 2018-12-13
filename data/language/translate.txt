@@ -1,5 +1,6 @@
 {
     "home-en":{
+
         "home" : "Home",
         "library" : "Library",
         "books" : "Books",
@@ -7,8 +8,15 @@
         "registration" : "Registration",
         "about" : "About",
         "contact" : "Contact",
-        "book-site" : "Book-site",
-        "you should buy here" : "You should buy here",
+
+        "book-site" : "Book-sight",
+        "you should buy here" : "books for all and all for books",
+
+        "comertial_title_1" : "Availability",
+        "comertial_text_1" : "One of the books is the main purpose of availability.everyone  should be able to read or listen books. Our main purpose is exactly the same: books are everywhere and for everyone",
+        "comertial_title_2" : "Robast Library",
+        "comertial_text_2" : "We have one of the best electronic libraries in Georgia. Here you will learn about the famous writers from different parts of the world who are looking forward to their loyal readers",
+
         "georgian" : "Discover",
         "books are free here!" : "Books are free here!",
         "read almost 100000 books" : "Read almost 100000 books",
@@ -23,6 +31,7 @@
 
     },
     "home-ge":{
+
         "home" : "სახლი",
         "library" : "ბიბლიოთეკა",
         "books" : "წიგნები",
@@ -30,8 +39,14 @@
         "registration" : "რეგისტრაცია",
         "about" : "ჩვენ შესახებ",
         "contact" : "კონტაქტი",
-        "book-site" : "წიგნები",
-        "you should buy here" : "შენ აქ უნდა იყიდო",
+
+        "comertial_title_1" : "ხელმისაწვდომობა",
+        "comertial_text_1" : "წიგნის ერთ-ერთი უმთავრესი დანიშნულაბა ხელმისაწვდომობაა. მისი წაკითხვა ან მოსმენა უნდა შეეძლოს ყველას. ჩვენი მთავარი მიზანიც ზუსტად ესაა - წიგნები ყველგან და ყველასთვის ",
+        "comertial_title_2" : "ძლიერი ბიბლიოთეკა",
+        "comertial_text_2" : "ჩვენ გვაქვს საქართველოში ერთ-ერთი საუკეთესო ელექტრობიბლიოთეკა. აქ თქვენ გაეცნობით ცნობილი მწერლების მსოფლიოს სხვადასხვა კუთხის წიგნებს, რომლებიც მოუთმენლად ელიან თავიანთ ერთგულ მკითხველებს",
+
+        "book-site" : "Book-sight",
+        "you should buy here" : "books for all and all for books",
         "georgian" : "აღმოაჩინე",
         "books are free here!" : "წიგნები აქ უფასოა",
         "read almost 100000 books" : "წაიკითხე თითქმის 100000 წიგნი",

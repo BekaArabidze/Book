@@ -88,7 +88,7 @@ body {
   font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .search-box__list__item__link {
-  font-size: calc(16px + (30 - 16) * ((100vw - 300px) / (1600 - 300))) !important; }
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .but:link, .but:visited {
   font-family: 'Roboto', sans-serif;
@@ -224,8 +224,7 @@ body {
     height: 100%;
     position: relative; }
   .footer__list {
-    list-style-type: none;
-    border-top: red; }
+    list-style-type: none; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
@@ -330,7 +329,7 @@ body {
   .heading-primary--sub {
     display: block;
     font-size: 3rem;
-    color: #dfdfdf;
+    color: #ffffff;
     text-shadow: 2px 1px 3px #071D2B;
     position: relative;
     letter-spacing: 8px; }
@@ -520,7 +519,7 @@ body {
     .search-box__list {
       list-style-type: none;
       position: relative; }
-      .search-box__list__item:nth-last-child {
+      .search-box__list__item:nth-last-child() {
         display: block; } }
 
 .loading_screen {
@@ -659,21 +658,35 @@ body {
     .blogers_section__grid__box {
       margin: 0 auto;
       max-width: 100%;
-      height: auto; }
-      .blogers_section__grid__box__img, .blogers_section__grid__box .card-hover {
+      height: auto;
+      position: relative; }
+      .blogers_section__grid__box__img {
         max-width: 100%;
         height: 40rem;
         object-fit: cover;
         border-radius: 5px;
         overflow: hidden;
+        cursor: pointer;
+        position: relative;
         background-size: cover; }
-      .blogers_section__grid__box .card-hover {
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        transition: all 250ms; }
-        .blogers_section__grid__box .card-hover:hover {
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          transform: scale(1.02); }
-      .blogers_section__grid__box__paragraph {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 2.5rem;
-        font-weight: 400; }
+      .blogers_section__grid__box__hover {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #ffffff;
+        z-index: 20;
+        opacity: 0;
+        font-size: 3rem;
+        transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+        transform: scale(1.3); }
+        .blogers_section__grid__box__hover__info {
+          font-family: 'Varela Round', sans-serif;
+          font-size: 3rem;
+          font-weight: 400;
+          color: #ffffff;
+          text-align: center;
+          margin-top: 35%; }
+        .blogers_section__grid__box__hover:hover {
+          opacity: 1; }

@@ -64,7 +64,6 @@
 
 .heading-primary {
     color: $font-white-color;
-    text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 4rem;
     font-family: 'Varela Round', sans-serif;
@@ -72,13 +71,12 @@
 
     &--main {
         display: block;
-        font-size: 9rem;
+        // font-size: 9rem;
         letter-spacing: 15px;
         text-shadow: 2px 1px 3px #071D2B;
         position: relative;
-
-        font-weight: bold;
-
+        // font-weight: bold;
+        text-transform: uppercase;
 
         &::first-letter {
             color: $primary-color-first;
@@ -87,7 +85,7 @@
 
     &--sub {
         display: block;
-        font-size: 3rem;
+        // font-size: 3rem;
         color: $font-white-color;
         text-shadow: 2px 1px 3px #071D2B;
         position: relative;

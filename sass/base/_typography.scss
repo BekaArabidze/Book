@@ -4,9 +4,23 @@ body {
     // font-weight: 300;
     /*font-size: 16px;*/
     // overflow: hidden;
-    
     line-height: 2;
+    
 }
+
+
+/// === === === === MAIN HEADER FONT FONT CALC
+.heading-primary--main{
+    font-weight: bold;
+    font-size: calc(30px + (90 - 30) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.heading-primary--sub {
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+/// === === === === MAIN HEADER FONT FONT CALC
+
+
 
 /// === === === === COMETRIAL SECTION FONT FONT CALC
 .commertial--main {
@@ -15,9 +29,12 @@ body {
 }
 
 .commertial--sub {
+    color:rgb(61, 68, 77);
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
 }
 /// === === === === COMETRIAL SECTION FONT FONT CALC
+
+
 
 
 /// === === === === All HEADER FONT FONT CALC
@@ -56,3 +73,9 @@ body {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 /// === === === === BOOK GENRE NAVIGATION FONT CALC
+
+
+/// === === === === SUBSCRIPTIOM FONT CALC
+.subcription-textbox--main{
+    font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300))) !important;
+}

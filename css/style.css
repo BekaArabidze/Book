@@ -589,15 +589,14 @@ body {
 
 .subcription-textbox {
   max-width: 80%;
-  height: 20rem;
+  height: 15rem;
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
   font-family: 'Varela Round', sans-serif;
   text-align: center;
   position: relative;
-  top: 2rem;
-  left: 2rem; }
+  top: 2rem; }
   .subcription-textbox--main {
     display: block;
     position: relative; }
@@ -687,8 +686,8 @@ body {
         opacity: 0; }
         .blogers_section__grid__box__hover__info {
           font-family: 'Varela Round', sans-serif;
-          font-size: 3rem;
-          font-weight: 400;
+          font-size: 2.5rem;
+          font-weight: bold;
           color: #ffffff;
           text-align: center;
           margin-top: 35%; }

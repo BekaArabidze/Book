@@ -12,13 +12,13 @@ body {
 /// === === === === MAIN HEADER FONT FONT CALC
 .heading-primary--main{
     font-weight: bold;
-    font-size: calc(30px + (90 - 30) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
 .heading-primary--sub {
-    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size:calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-/// === === === === MAIN HEADER FONT FONT CALC
+ 
 
 
 
@@ -32,22 +32,22 @@ body {
     color:rgb(61, 68, 77);
     font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
 }
-/// === === === === COMETRIAL SECTION FONT FONT CALC
+ 
 
 
 
 
-/// === === === === All HEADER FONT FONT CALC
+/// === === === === All HEADER FONT FONT CALC 
 .primary-text--main {
     font-weight: bold;
-    font-size: calc(35px + (60 - 35) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
 
 .primary-text--sub {
-    font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size:calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-/// === === === === All HEADER FONT FONT CALC
+ 
 
 
 
@@ -56,7 +56,7 @@ body {
 .footer-primary--main{
     font-size: calc(20px + (25 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-/// === === === === All FOOTER FONT FONR CALC
+ 
 
 
 
@@ -64,7 +64,7 @@ body {
 .overlay-menu{
     font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-/// === === === === MAIN NAVIGATION FONT CALC
+ 
 
 
 
@@ -72,10 +72,19 @@ body {
 .search-box__list__item__link{
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
-/// === === === === BOOK GENRE NAVIGATION FONT CALC
+ 
 
 
 /// === === === === SUBSCRIPTIOM FONT CALC
 .subcription-textbox--main{
     font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+
+
+.registration_container{
+     
+    &__title{
+        font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
+    }
 }

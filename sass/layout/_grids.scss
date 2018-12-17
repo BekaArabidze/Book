@@ -86,3 +86,37 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+// === === === === === === === === === //
+// === === === OTHER PAGES  === === === //
+// === === === === === === === === === //
+
+.registration_container{
+    max-width: $max-width;
+    margin: 10vh auto;
+    display: grid; 
+    align-items: center;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: auto;
+} 
+ 
+@media only screen and (min-width: 280px) {
+    .registration_container{  
+        grid-auto-columns: 1fr;
+    }
+
+}
+
+
+ 

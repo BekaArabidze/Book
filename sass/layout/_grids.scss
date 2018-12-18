@@ -101,22 +101,65 @@
 // === === === OTHER PAGES  === === === //
 // === === === === === === === === === //
 
+// === === REGISTRATION SECTION
 .registration_container{
-    max-width: $max-width;
-    margin: 10vh auto;
+    max-width: 50%;
+    margin: 10vh auto;  
     display: grid; 
     align-items: center;
     grid-gap: 4rem;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-} 
- 
-@media only screen and (min-width: 280px) {
-    .registration_container{  
-        grid-auto-columns: 1fr;
+    grid-template-areas: 
+        "name surname "
+        "date date"
+        "email button"
+        "password button"; 
+
+    &__name{
+        grid-area: name;
     }
 
-}
+    &__surname{
+        grid-area: surname;
+    }
 
+    &__date{
+        grid-area: date;
+    }
+
+    &__email{
+        grid-area: email;
+    }
+
+    &__password{
+        grid-area: password;
+    }
+
+    &__button{
+        grid-area: button;
+    }
+} 
+
+
+ 
+@media (max-width: 700px) {
+    .registration_container{
+        max-width: 80vw;
+        margin: 10vh auto;
+        display: grid; 
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "name  "
+            "surname"
+            "date"
+            "email"
+            "password"
+            "button"; 
+
+    }
+}
 
  

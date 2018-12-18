@@ -18,6 +18,12 @@ body {
     // scroll-snap-type: y mandatory;
 }
 
+.first_red{
+
+    &::first-letter{
+        color: $primary-color-first;
+    }
+}
 
 // section {
 //     scroll-snap-align: start;

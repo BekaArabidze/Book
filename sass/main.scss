@@ -5,7 +5,7 @@
 @import "abstracts/media"; 
 /// ABSTRACTS
     
-      
+        
 /// BASE        
 @import "base/animation";    
 @import "base/base"; 
@@ -14,10 +14,6 @@
 /// BASE 
 
  
-/// COMPONENTS 
-@import "components/button";
-@import "components/scroll_down";
-/// COMPONENTS  
 
 
 /// LAYOUT 
@@ -39,3 +35,8 @@
 @import "vendors/greensock";
 @import "vendors/hover";
 /// VENDORS
+
+/// COMPONENTS 
+@import "components/button";
+@import "components/scroll_down";
+/// COMPONENTS  

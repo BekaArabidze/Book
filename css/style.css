@@ -107,6 +107,9 @@ body {
 .registration_container__title {
   font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300))) !important; }
 
+.blogers_section__grid__box__hover {
+  font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300))) !important; }
+
 .commertial_section {
   max-width: 80%;
   margin: 0 auto; }
@@ -655,23 +658,23 @@ body {
       .blogers_section__grid__box__hover {
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-family: 'Varela Round', sans-serif;
         position: absolute;
         left: 0;
         top: 0;
         color: #ffffff;
         z-index: 20;
-        opacity: 0; }
-        .blogers_section__grid__box__hover__info {
-          font-family: 'Varela Round', sans-serif;
-          font-size: 2.5rem;
-          font-weight: bold;
-          color: #ffffff;
-          text-align: center;
-          margin-top: 35%; }
-          .blogers_section__grid__box__hover__info::first-letter {
-            color: #FF6473; }
+        opacity: 0;
+        transition: bottom 0.5s, opacity 0.5s cubic-bezier(0.33, 0.66, 0.66, 1); }
         .blogers_section__grid__box__hover:hover {
-          opacity: 1; }
+          opacity: 1;
+          bottom: 50rem;
+          transition: all .6s;
+          background: rgba(35, 49, 66, 0.5); }
 
 .registration_container__title {
   margin-top: 14vh; }

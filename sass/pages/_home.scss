@@ -257,34 +257,31 @@
             &__hover {
                 width: 100%;
                 height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3rem;
+                font-family: 'Varela Round', sans-serif;
                 position: absolute;
                 left: 0;
                 top: 0;
                 color: $font-white-color;
                 z-index: 20;
                 opacity: 0;
-                // background-color: red;
-                // transition: bottom .3s, opacity .3s cubic-bezier(.33,.66,.66,1);
-                // transform: scale(1.3);
-
-                &__info {
-                    font-family: 'Varela Round', sans-serif;
-                    font-size: 2.5rem;
-                    font-weight: bold;
-                    color: $font-white-color;
-                    text-align: center;
-                    margin-top: 35%;
+                transition: bottom .5s, opacity .5s cubic-bezier(.33, .66, .66, 1);
+                
 
 
-                    &::first-letter {
-                        color: $primary-color-first;
-
-                    }
-                }
 
                 &:hover {
                     opacity: 1;
+                    bottom: 50rem;
+                    transition: all .6s;
+                    background: rgba(35, 49, 66, 0.5);
+                    
+                    
                 }
+
             }
 
             /// ===  ===  === Hover on images
@@ -294,7 +291,7 @@
             // .card-hover {
             //     @extend .blogers_section__grid__box__img;
             //     @include material-shadow(1);
-            //     transition: all .5s ease;
+
 
 
             //     &:hover {
@@ -304,16 +301,11 @@
             //     }
             // }
 
+
             /// IMG shadow hover
 
 
-            // &__paragraph {
-            //     font-family: 'Varela Round', sans-serif;
-            //     font-size: 2.5rem;
-            //     font-weight: 400;
-
-
-            // }
+            
         }
     }
 }

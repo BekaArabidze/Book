@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+</head>
+
+<style>
+
+#carouselExampleFade{
+    height:100vh !important;
+    overflow:hidden !important;
+}
+
+</style>
+
+<body>
+
+    <div class="loading_screen">
+        <img src="https://cdn.dribbble.com/users/778626/screenshots/5064153/verify.gif" width="60%" ; alt="" srcset="">
+    </div>
+
+    <div class="header">
+        <div class="header__video-box">
+            <video autoplay muted loop class="header__video">
+                <source src="/img/Merged_Krupn_Close_Comic.mp4" type="video/mp4">
+                <source src="/img/Merged_Krupn_Close_Comic.webm" type="video/webm">
+            </video>
+        </div>
+        <div class="header__logo-box">
+            <img src="/img/mainlogo.svg"Logo" class="header__logo">
+        </div>
+
+        <div class="button_container" id="toggleMenuBtn">
+            <span class="top" id="toggleMenuBtn_Ln_1"></span>
+            <span class="middle" id="toggleMenuBtn_Ln_2"></span>
+            <span class="bottom" id="toggleMenuBtn_Ln_3"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a class="lang" key="home" href="/index.html">Home</a></li>
+                    <li><a class="lang" key="library" href="../Other-Pages/library.html">Library</a></li>
+                    <li><a class="lang" key="books" href="../Other-Pages/book-place.html">Books</a></li>
+                    <li><a class="lang" key="book" href="../Other-Pages/book-page(description).html">Book</a></li>
+                    <li><a class="lang" key="registration" href="../Other-Pages/registration.html">Registration</a></li>
+                    <li><a class="lang" key="about" href="#">About</a></li>
+                    <li><a class="lang" key="contact" href="../Other-Pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slaiderImages/bible-biblia-book-1112048.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slaiderImages/blur-book-stack-books-590493.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slaiderImages/books-bookshelf-encyclopedia-34592.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+
+
+    <!-- jQuerry.JS -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://vjs.zencdn.net/7.3.0/video.js"></script> -->
+
+    <!-- GREENSOCK.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <!-- SCROLL-OUT.JS -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

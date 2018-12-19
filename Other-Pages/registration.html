@@ -111,27 +111,27 @@
         
 
         <div class=" registration_container__name textfield_outlined">
-            <input id="name" type="text" >
-            <span>Name</span>
+            <input id="name" type="text" placeholder="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'name'"  >
+            <span id="nameTag" >Name</span>
         </div>
 
         <div class=" registration_container__surname textfield_outlined">
-            <input id="surname" type="text" >
-            <span>Surname</span>
+            <input id="surname" type="text" placeholder="surname" onfocus="this.placeholder = ''" onblur="this.placeholder = 'surname'"  >
+            <span id="surnameTag" >Surname</span>
         </div>
 
         <div class=" registration_container__date textfield_outlined">
-            <input id="date" type="date" >
+            <input id="date" type="date" placeholder="date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'date'"  >
         </div>
 
         <div class=" registration_container__email textfield_outlined">
-            <input id="email" type="email" >
-            <span>E-mail</span>
+            <input id="email" type="email" placeholder="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'email'"  >
+            <span id="emailTag" >E-mail</span>
         </div>
 
         <div class=" registration_container__password textfield_outlined">
-            <input id="password" type="password" >
-            <span>Password</span>
+            <input id="password" type="password" placeholder="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'password'"  >
+            <span id="passwordTag" >Password</span>
         </div>
 
         <button id="validationForm" class=" but but--black hvr-grow registration_container__button ">Register</button>
@@ -229,8 +229,9 @@
     <!-- SCROLL-OUT.JS -->
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
-
+    <!-- JS FILES -->
     <script type="module" src="../js/main.js"></script>
+    <script src="../js/pages/registerValidation.js"></script>
 </body>
 
 </html>

@@ -103,7 +103,7 @@
 
 // === === REGISTRATION SECTION
 .registration_container {
-    max-width: 50%;
+    max-width: 60%;
     margin: 10vh auto;
     display: grid;
     align-items: center;
@@ -143,9 +143,9 @@
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .registration_container {
-        max-width: 80vw;
+        max-width: 90vw;
         margin: 10vh auto;
         display: grid;
         align-items: center;

@@ -30,7 +30,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100%; 
 
     input {
         width: 100%;
@@ -43,27 +43,38 @@
         border-radius: 5px;
         z-index: 2;
 
+        &:focus {
+            border: 2px solid $color-main;
+        }
+
+        &:focus + ::placeholder{
+            opacity: 0;
+        }
+
+        &:placeholder-shown{
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 2rem;
+        }
+
         &:focus+span {
+            opacity: 1;
             font-size: 1.8rem;
-            color: $primary-color-first;
+            color: $color-main;
             transform: translate(-10%, -84%);
             z-index: 3;
 
         }
 
-        &:focus {
-            border: 2px solid$primary-color-first;
-
-        }
     }
 
     span {
+        opacity: 0;
         padding: 0 5px 0 5px;
         margin-left: 1.01em;
         position: absolute;
         color: rgba(0, 0, 0, 0.5);
         background-color: white;
-        transition: all .1s ease-in-out;
+        transition: all .2s ease-in-out;
         font-size: 2rem;
     }
 }

@@ -162,7 +162,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 3fr)); }
 
 .registration_container {
-  max-width: 50%;
+  max-width: 60%;
   margin: 10vh auto;
   display: grid;
   align-items: center;
@@ -183,9 +183,9 @@ body {
   .registration_container__button {
     grid-area: button; }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .registration_container {
-    max-width: 80vw;
+    max-width: 90vw;
     margin: 10vh auto;
     display: grid;
     align-items: center;
@@ -698,20 +698,27 @@ body {
     border: 1px solid #233142;
     border-radius: 5px;
     z-index: 2; }
+    .textfield_outlined input:focus {
+      border: 2px solid #1abc9c; }
+    .textfield_outlined input:focus + ::placeholder {
+      opacity: 0; }
+    .textfield_outlined input:placeholder-shown {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 2rem; }
     .textfield_outlined input:focus + span {
+      opacity: 1;
       font-size: 1.8rem;
-      color: #FF6473;
+      color: #1abc9c;
       transform: translate(-10%, -84%);
       z-index: 3; }
-    .textfield_outlined input:focus {
-      border: 2px solid #FF6473; }
   .textfield_outlined span {
+    opacity: 0;
     padding: 0 5px 0 5px;
     margin-left: 1.01em;
     position: absolute;
     color: rgba(0, 0, 0, 0.5);
     background-color: white;
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in-out;
     font-size: 2rem; }
 
 .but {

@@ -11,6 +11,8 @@ let surnameTag = document.querySelector('#surnameTag');
 let emailTag = document.querySelector('#emailTag');
 let passwordTag = document.querySelector('#passwordTag');
 
+let validationCount = 0;
+
 // let name = document.getElementById("name").value;
 // let surname = document.getElementById("surname").value;
 // let date = document.getElementById("date").value;
@@ -45,8 +47,9 @@ function MyRegistration() {
     }else{
         nameTag.innerHTML = "";
         nameInp.style.border = '2px solid #1abc9c';
+        nameValidated_empty = true;
     }
-
+ 
     //name length
     if( (name.length <= 2) || (name.length > 10) ){
         nameInp.placeholder = "Must be (+2) Symols";
@@ -62,6 +65,7 @@ function MyRegistration() {
     }else{
         nameTag.innerHTML = "";
         nameInp.style.border = '2px solid #1abc9c';
+        nameValidated_length = true;
     }
 
     //no numbers
@@ -79,6 +83,7 @@ function MyRegistration() {
     }else{
         nameTag.innerHTML = "";
         nameInp.style.border = '2px solid #1abc9c';
+        nameValidated_notNumber = true;
     }
 
     /// === === === === NAME VALIDATION
@@ -100,6 +105,7 @@ function MyRegistration() {
     }else{
         surnameTag.innerHTML = "";
         surnameInp.style.border = '2px solid #1abc9c';
+        surnameValidated_empty = true;
     }
 
     if( (surname.length <=3) || (surname.length >10) ){
@@ -116,6 +122,7 @@ function MyRegistration() {
     }else{
         nameTag.innerHTML = "";
         nameInp.style.border = '2px solid #1abc9c';
+        surnameValidated_length = true;
     }
 
     if(!isNaN(surname) ){
@@ -132,6 +139,7 @@ function MyRegistration() {
     }else{
         surnameTag.innerHTML = "";
         surnameInp.style.border = '2px solid #1abc9c';
+        surnameValidated_notNumber = true;
     }
 
 
@@ -143,7 +151,7 @@ function MyRegistration() {
 
     // if(date == ""){
     //     console.log(document.getElementById("date").innerHTML = "Please fill the DATE  gap");
-    //     return false;
+    //     
     // }
 
     /// === === === === DATE VALIDATION
@@ -163,10 +171,11 @@ function MyRegistration() {
         if(emailInp.focus){
             emailInp.style.border = '2px solid #FF6473';
         }
-         
+        return false;
     }else{
         emailTag.innerHTML = "";
         emailInp.style.border = '2px solid #1abc9c';
+        emailValidated_empty = true;
     }         
      
 
@@ -180,10 +189,11 @@ function MyRegistration() {
         if(emailInp.focus){
             emailInp.style.border = '2px solid #FF6473';
         }
-         
+        return false;
     }else{
         emailTag.innerHTML = "";
         emailInp.style.border = '2px solid #1abc9c';
+        emailValidated_withAt = true;
     }  
      
 
@@ -206,12 +216,13 @@ function MyRegistration() {
     }else{
         passwordTag.innerHTML = "";
         passwordInp.style.border = '2px solid #1abc9c';
+        passwordValidated_empty = true;
     }
      
 
-    if( (password.length <= 6) || (password.length > 10) ){
-        passwordInp.placeholder = "Must be (+6) Symols";
-        passwordTag.innerHTML = "Must be (+6) Symols";
+    if( (password.length <= 4) ){
+        passwordInp.placeholder = "Must be (+4) Symols";
+        passwordTag.innerHTML = "Must be (+4) Symols";
         passwordTag.style.color = "#FF6473";
         passwordTag.style.backgroundColor = "#fff";
         passwordInp.value = "";
@@ -223,10 +234,23 @@ function MyRegistration() {
     }else{
         passwordTag.innerHTML = "";
         passwordInp.style.border = '2px solid #1abc9c';
+        passwordValidated_lenght = true;
     }
 
     /// === === === === PASSWORD VALIDATION
-    
+    if (nameValidated_empty &&
+        nameValidated_length &&
+        nameValidated_notNumber &&
+        surnameValidated_empty &&
+        surnameValidated_length &&
+        surnameValidated_notNumber &&
+        emailValidated_empty &&
+        emailValidated_withAt &&
+        passwordValidated_empty &&
+        passwordValidated_lenght) {
+        let validated = document.getElementById('validated');
+        validated.style.opacity ="1";    
+    }
 }
 
 /// === === === === === REGISTRATION JAVASCRIPT

@@ -108,7 +108,7 @@ function MyRegistration() {
         surnameValidated_empty = true;
     }
 
-    if( (surname.length <=3) || (surname.length >10) ){
+    if( surname.length <=3){
         surnameInp.placeholder = "Must be (+3) Symols";
         surnameTag.innerHTML = "Must be (+3) Symols";
         surnameTag.style.color = "#FF6473";
@@ -220,7 +220,7 @@ function MyRegistration() {
     }
      
 
-    if( (password.length <= 4) ){
+    if( password.length <= 4 ){
         passwordInp.placeholder = "Must be (+4) Symols";
         passwordTag.innerHTML = "Must be (+4) Symols";
         passwordTag.style.color = "#FF6473";

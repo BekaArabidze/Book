@@ -35,7 +35,7 @@ function MyRegistration() {
     //name emty
     if(name == ""){
         nameInp.placeholder = "Enter Your Name";
-        nameTag.innerHTML = "Enter Your Name"
+        nameTag.innerHTML = "Enter Your Name";
         nameTag.style.color = "#FF6473";
 
         if(nameInp.focus){ 
@@ -49,15 +49,14 @@ function MyRegistration() {
 
     //name length
     if( (name.length <= 2) || (name.length > 10) ){
-        nameInp.placeholder = "Must be +10 Symols";
-        nameTag.innerHTML = "Must be +10 Symols"
+        nameInp.placeholder = "Must be (+2) Symols";
+        nameTag.innerHTML = "Must be (+2) Symols";
         nameTag.style.color = "#FF6473";
         nameTag.style.backgroundColor = "#fff";
         nameInp.value = "";
         
         if(nameInp.focus){
             nameInp.style.border = '2px solid #FF6473';
-            nameTag.style.transform = "translate(-3%, -84%);";
         }
         return false;
     }else{
@@ -68,7 +67,7 @@ function MyRegistration() {
     //no numbers
     if(!isNaN(name) ){
         nameInp.placeholder = "Number Not Allowed";
-        nameTag.innerHTML = "Numbers Not Allowed"
+        nameTag.innerHTML = "Numbers Not Allowed";
         nameTag.style.color = "#FF6473";
         nameTag.style.backgroundColor = "#fff";
         nameInp.value = "";
@@ -90,9 +89,41 @@ function MyRegistration() {
     /// === === === === SURNAME VALIDATION
     
     if(surname == ""){
-        surnameTag.innerHTML = "Enter Surname";
+        surnameInp.placeholder = "Enter Your surname";
+        surnameTag.innerHTML = "Enter Your surname";
+        surnameTag.style.color = "#FF6473";
+
+        if(surnameInp.focus){ 
+            surnameInp.style.border = '2px solid #FF6473';
+        } 
+        return false;
+    }else{
+        surnameTag.innerHTML = "";
+        surnameInp.style.border = '2px solid #1abc9c';
+    }
+
+    if( (surname.length <=3) || (surname.length >10) ){
+        surnameInp.placeholder = "Must be (+3) Symols";
+        surnameTag.innerHTML = "Must be (+3) Symols";
         surnameTag.style.color = "#FF6473";
         surnameTag.style.backgroundColor = "#fff";
+        surnameInp.value = "";
+        
+        if(surnameInp.focus){
+            surnameInp.style.border = '2px solid #FF6473';
+        }
+        return false;
+    }else{
+        nameTag.innerHTML = "";
+        nameInp.style.border = '2px solid #1abc9c';
+    }
+
+    if(!isNaN(surname) ){
+        surnameInp.placeholder = "Number Not Allowed";
+        surnameTag.innerHTML = "Numbers Not Allowed";
+        surnameTag.style.color = "#FF6473";
+        surnameTag.style.backgroundColor = "#fff";
+        surnameInp.value = "";
         
         if(surnameInp.focus){
             surnameInp.style.border = '2px solid #FF6473';
@@ -103,30 +134,6 @@ function MyRegistration() {
         surnameInp.style.border = '2px solid #1abc9c';
     }
 
-    if( (surname.length <=3) || (surname.length >10) ){
-        surnameTag.innerHTML = "Must be +10 Symols";
-        surnameTag.style.color = "#FF6473";
-        surnameTag.style.backgroundColor = "#fff";
-        surnameInp.value = "";
-        
-        if(surnameInp.focus){
-            surnameInp.style.border = '2px solid #FF6473';
-        }
-        return false;
-    }
-
-    if(!isNaN(surname) ){
-        surnameTag.innerHTML = "No Numbers";
-        surnameTag.style.color = "#FF6473";
-        surnameTag.style.backgroundColor = "#fff";
-        surnameInp.value = "";
-        
-        if(surnameInp.focus){
-            surnameInp.style.border = '2px solid #FF6473';
-        }
-        return false;
-    }
-
 
     /// === === === === SURNAME VALIDATION
 
@@ -134,10 +141,10 @@ function MyRegistration() {
 
     /// === === === === DATE VALIDATION
 
-    if(date == ""){
-        console.log(document.getElementById("date").innerHTML = "Please fill the DATE  gap");
-        return false;
-    }
+    // if(date == ""){
+    //     console.log(document.getElementById("date").innerHTML = "Please fill the DATE  gap");
+    //     return false;
+    // }
 
     /// === === === === DATE VALIDATION
 
@@ -147,14 +154,38 @@ function MyRegistration() {
     /// === === === === EMAIL VALIDATION
 
     if(email == ""){
-        console.log(document.getElementById("email").innerHTML = "Please fill the email gap");
-        return false;
-    }
+        emailInp.placeholder = "Enter Your email";
+        emailTag.innerHTML = "Enter Your email";
+        emailTag.style.color = "#FF6473";
+        emailTag.style.backgroundColor = "#fff";
+        emailInp.value = "";
+        
+        if(emailInp.focus){
+            emailInp.style.border = '2px solid #FF6473';
+        }
+         
+    }else{
+        emailTag.innerHTML = "";
+        emailInp.style.border = '2px solid #1abc9c';
+    }         
+     
 
     if(email.indexOf("@") <= -1){
-        console.log(document.getElementById("email").innerHTML = "THERE ARE NO @ IN YOUR EMAIL");
-        return false;
-    }
+        emailInp.placeholder = "email Must Contain (@)";
+        emailTag.innerHTML = "email Must Contain (@)";
+        emailTag.style.color = "#FF6473";
+        emailTag.style.backgroundColor = "#fff";
+        emailInp.value = "";
+        
+        if(emailInp.focus){
+            emailInp.style.border = '2px solid #FF6473';
+        }
+         
+    }else{
+        emailTag.innerHTML = "";
+        emailInp.style.border = '2px solid #1abc9c';
+    }  
+     
 
     /// === === === === EMAIL VALIDATION
     
@@ -164,13 +195,34 @@ function MyRegistration() {
     /// === === === === PASSWORD VALIDATION
 
     if(password == ""){
-        console.log(document.getElementById("password").innerHTML = "Please fill the  PASSWORD gap");
-        return false;
-    }
+        passwordInp.placeholder = "Enter Your password";
+        passwordTag.innerHTML = "Enter Your password";
+        passwordTag.style.color = "#FF6473";
 
-    if( (password.length <= 3) || (password.length > 15) ){
-        console.log(document.getElementById("password").innerHTML = "PASSWORD MUST BE BETWEEN 3 TO 15 CHARACTERS");
+        if(passwordInp.focus){ 
+            passwordInp.style.border = '2px solid #FF6473';
+        } 
         return false;
+    }else{
+        passwordTag.innerHTML = "";
+        passwordInp.style.border = '2px solid #1abc9c';
+    }
+     
+
+    if( (password.length <= 6) || (password.length > 10) ){
+        passwordInp.placeholder = "Must be (+6) Symols";
+        passwordTag.innerHTML = "Must be (+6) Symols";
+        passwordTag.style.color = "#FF6473";
+        passwordTag.style.backgroundColor = "#fff";
+        passwordInp.value = "";
+        
+        if(passwordInp.focus){
+            passwordInp.style.border = '2px solid #FF6473';
+        }
+        return false;
+    }else{
+        passwordTag.innerHTML = "";
+        passwordInp.style.border = '2px solid #1abc9c';
     }
 
     /// === === === === PASSWORD VALIDATION

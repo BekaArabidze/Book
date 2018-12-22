@@ -160,7 +160,7 @@
 
     .primary-text {
         color: $font-white-color;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         backface-visibility: hidden;
         margin-bottom: 4rem;
         font-family: 'Varela Round', sans-serif;
@@ -171,7 +171,7 @@
             letter-spacing: 8px;
             text-shadow: 2px 1px 3px #071D2B;
             position: relative;
-
+            text-transform: uppercase;
 
 
 

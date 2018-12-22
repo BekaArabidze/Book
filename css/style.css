@@ -352,7 +352,6 @@ body {
         display: inline-block; }
   .header_secondary .primary-text {
     color: #ffffff;
-    text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 4rem;
     font-family: 'Varela Round', sans-serif; }
@@ -360,7 +359,8 @@ body {
       display: block;
       letter-spacing: 8px;
       text-shadow: 2px 1px 3px #071D2B;
-      position: relative; }
+      position: relative;
+      text-transform: uppercase; }
       .header_secondary .primary-text--main::first-letter {
         color: #FF6473; }
     .header_secondary .primary-text--sub {

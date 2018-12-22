@@ -86,6 +86,7 @@
 }
 
 
+/// About
 
 
 
@@ -95,6 +96,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/// About
 
 
 // === === === === === === === === === //
@@ -158,6 +169,25 @@
             "email"
             "password"
             "button";
+
+    }
+}
+
+
+/// === === ===   ABOUT SECTION GRID
+.about_section {
+
+    max-width: 60%;
+    margin: 0 auto;
+
+    &__grid {
+        display: grid;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+        grid-gap: 4rem;
+
 
     }
 }

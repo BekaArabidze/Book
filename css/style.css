@@ -108,7 +108,10 @@ body {
   font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .blogers_section__grid__box__hover {
-  font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300))) !important; }
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important; }
+
+.about-textbox--sub {
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .commertial_section {
   max-width: 80%;
@@ -195,6 +198,16 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
+
+.about_section {
+  max-width: 60%;
+  margin: 0 auto; }
+  .about_section__grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-gap: 4rem; }
 
 .footer {
   width: 100%;
@@ -723,6 +736,70 @@ body {
     background-color: white;
     transition: all .2s ease-in-out;
     font-size: 2rem; }
+
+.about_section {
+  width: 100%;
+  margin-top: 20vh;
+  margin-bottom: 20vh; }
+  .about_section .about-textbox {
+    color: #233142;
+    backface-visibility: hidden;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin-top: 4rem; }
+    .about_section .about-textbox--main {
+      display: block;
+      font-size: 4rem;
+      text-transform: uppercase;
+      position: relative;
+      letter-spacing: 10px;
+      font-weight: 400; }
+      .about_section .about-textbox--main::first-letter {
+        color: #FF6473; }
+    .about_section .about-textbox--sub {
+      display: block;
+      font-size: 2rem;
+      position: relative;
+      top: .5rem;
+      letter-spacing: 1px; }
+  .about_section__grid {
+    width: 100%;
+    margin-top: 10rem;
+    position: relative; }
+    .about_section__grid__box {
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      position: relative; }
+      .about_section__grid__box__img {
+        max-width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        background-size: cover; }
+      .about_section__grid__box__hover {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-family: 'Varela Round', sans-serif;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #ffffff;
+        z-index: 20;
+        opacity: 0;
+        transition: bottom 0.5s, opacity 0.5s cubic-bezier(0.33, 0.66, 0.66, 1); }
+        .about_section__grid__box__hover:hover {
+          opacity: 1;
+          bottom: 50rem;
+          transition: all .6s;
+          background: rgba(35, 49, 66, 0.5); }
 
 .but {
   font-family: 'Roboto', sans-serif;

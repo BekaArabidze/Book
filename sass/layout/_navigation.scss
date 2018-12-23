@@ -201,7 +201,7 @@
     }
 }
 
-@media (max-width:1500px) {
+@media (max-width:1200px) {
     .search-box {
         text-align: center;
         padding: .3rem;
@@ -210,10 +210,18 @@
         &__list {
             list-style-type: none;
             position: relative;
+            
+            
 
             &__item:nth-last-child() {
                 display: block;
+                
             }
+
+
+            // &__item:not(:last-child) {
+            //     margin-right: 0rem;
+            // }
         }
     }
 }

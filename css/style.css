@@ -200,7 +200,7 @@ body {
     grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
 
 .about_section {
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto; }
   .about_section__grid {
     display: grid;
@@ -513,7 +513,7 @@ body {
         .search-box__list__item__link:link::first-letter, .search-box__list__item__link:visited::first-letter {
           color: #FF6473; }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
   .search-box {
     text-align: center;
     padding: .3rem; }
@@ -759,6 +759,7 @@ body {
     .about_section .about-textbox--sub {
       display: block;
       font-size: 2rem;
+      color: #505a66;
       position: relative;
       top: .5rem;
       letter-spacing: 1px; }

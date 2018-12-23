@@ -781,26 +781,6 @@ body {
         cursor: pointer;
         position: relative;
         background-size: cover; }
-      .about_section__grid__box__hover {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        font-family: 'Varela Round', sans-serif;
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #ffffff;
-        z-index: 20;
-        opacity: 0;
-        transition: bottom 0.5s, opacity 0.5s cubic-bezier(0.33, 0.66, 0.66, 1); }
-        .about_section__grid__box__hover:hover {
-          opacity: 1;
-          bottom: 50rem;
-          transition: all .6s;
-          background: rgba(35, 49, 66, 0.5); }
 
 .but {
   font-family: 'Roboto', sans-serif;

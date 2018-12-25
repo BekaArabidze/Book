@@ -199,6 +199,22 @@ body {
     grid-template-rows: auto;
     grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
 
+.login_container {
+  max-width: 60%;
+  margin: 10vh auto;
+  display: grid;
+  align-items: center;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "email email" "password password" "button button"; }
+  .login_container__email {
+    grid-area: email; }
+  .login_container__password {
+    grid-area: password; }
+  .login_container__button {
+    grid-area: button; }
+
 .about_section {
   max-width: 60%;
   margin: 0 auto; }

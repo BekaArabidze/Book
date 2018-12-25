@@ -108,9 +108,11 @@
             </h1>
             <div class="subcription__registration-box">
                 <ul>
-                    <li><input type="text" name="fullname" id="fullname" placeholder="Fullname"> </li>
-                    <li><input type="text" name="Emailadress" id="Emailadress" placeholder="Emailadress"> </li>
-                    <li><a href="#" class="but but--white hvr-grow translate lang" id="home-en" key="Subscribe">Subscribe</a></li>
+                    <li><input type="text" name="fullname" id="FullName" placeholder="Fullname" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fullname'"> </li>
+
+                    <li><input type="text" name="Emailadress" id="EmailAddress" placeholder="Emailadress" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Emailaddress'"> </li>
+
+                    <li><a href="#"  class="but but--white hvr-grow translate lang" id="home-en" key="Subscribe">Subscribe</a></li>
                 </ul>
 
 
@@ -244,6 +246,7 @@
 
 
     <script type="module" src="js/main.js"></script>
+    <script src="/js/pages/subValidation.js"></script>
 </body>
 
 </html>

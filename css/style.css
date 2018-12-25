@@ -301,14 +301,15 @@ body {
     top: 3rem;
     z-index: 50; }
   .header__logo {
-    height: 5rem; }
+    width: 4.5rem; }
   .header__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 50; }
+    z-index: 50;
+    backface-visibility: hidden; }
 
 .heading-primary {
   color: #ffffff;
@@ -346,7 +347,7 @@ body {
     top: 4rem;
     z-index: 50; }
   .header_secondary__logo {
-    height: 4rem; }
+    width: 4.5rem; }
   .header_secondary__text-box {
     position: absolute;
     top: 50%;
@@ -564,12 +565,21 @@ body {
         display: inline-block;
         padding: 1rem 2rem 0rem 2rem; }
         .subcription__registration-box ul li input {
-          width: 100%;
-          max-width: 25rem;
+          width: 94%;
+          height: 6.5rem;
+          padding: 0 3px 0 10px;
+          font-size: 2rem;
           box-sizing: border-box;
           border-radius: 5px;
           position: relative;
           top: -.7rem; }
+          .subcription__registration-box ul li input:focus {
+            border: 2px solid #1abc9c; }
+          .subcription__registration-box ul li input:focus + ::placeholder {
+            opacity: 0; }
+          .subcription__registration-box ul li input:placeholder-shown {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 2rem; }
         .subcription__registration-box ul li input[type=text] {
           padding: 1rem;
           font-size: 2rem; }

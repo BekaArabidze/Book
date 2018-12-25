@@ -56,12 +56,34 @@
 
 
                 input {
-                    width: 100%;
-                    max-width: 25rem;
+                    width: 94%;
+                    height: 6.5rem;
+                    padding: 0 3px 0 10px;
+                    font-size: 2rem;
                     box-sizing: border-box;
                     border-radius: 5px;
                     position: relative;
                     top: -.7rem;
+
+
+
+
+                    &:focus {
+                        border: 2px solid $color-main;
+                    }
+
+                    &:focus+ ::placeholder {
+                        opacity: 0;
+                    }
+
+                    &:placeholder-shown {
+                        color: rgba(0, 0, 0, 0.5);
+                        font-size: 2rem;
+                    }
+
+
+
+
 
                 }
 
@@ -251,6 +273,8 @@
                 cursor: pointer;
                 position: relative;
                 background-size: cover;
+
+
             }
 
             /// ===  ===  === Hover on images
@@ -269,7 +293,7 @@
                 z-index: 20;
                 opacity: 0;
                 transition: bottom .5s, opacity .5s cubic-bezier(.33, .66, .66, 1);
-                
+
 
 
 
@@ -278,8 +302,8 @@
                     bottom: 50rem;
                     transition: all .6s;
                     background: rgba(35, 49, 66, 0.5);
-                    
-                    
+
+
                 }
 
             }
@@ -305,7 +329,7 @@
             /// IMG shadow hover
 
 
-            
+
         }
     }
 }

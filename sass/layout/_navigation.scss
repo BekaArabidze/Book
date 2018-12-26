@@ -8,6 +8,15 @@
     transition: opacity .25s ease;
     z-index: 101;
 
+    &__pageMarker{ 
+        width:10rem;
+        height:18rem;
+        background-color:$primary-color-third;
+        clip-path:polygon(0% 0%, 0% 100%, 50% 70%,100% 100%, 100% 0%);
+        transform:translate(-33%,-28%);
+    }
+
+
     &:hover {
         opacity: .9;
         z-index: 101;
@@ -54,6 +63,18 @@
         }
     }
 }
+
+@media (max-width : 1000px){
+    .button_container{
+
+        &__pageMarker{
+            display: none;
+        }
+    }
+}
+
+
+
 
 .overlay {
     position: fixed;

@@ -211,10 +211,11 @@
                     padding-top: 2rem;
 
                     &:hover {
-                        color: $primary-color-second-hover;
+                        color: #525a63;
                     }
                     &::first-letter {
                         color: $primary-color-first;
+                        
                     }
                 }
             }

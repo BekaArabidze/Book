@@ -318,10 +318,10 @@ body {
   .header__logo-box {
     position: absolute;
     left: 4rem;
-    top: 3rem;
+    top: 2rem;
     z-index: 50; }
   .header__logo {
-    width: 4.5rem; }
+    width: 5rem; }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -364,10 +364,10 @@ body {
   .header_secondary__logo-box {
     position: absolute;
     left: 4rem;
-    top: 4rem;
+    top: 2rem;
     z-index: 50; }
   .header_secondary__logo {
-    width: 4.5rem; }
+    width: 5rem; }
   .header_secondary__text-box {
     position: absolute;
     top: 50%;
@@ -540,7 +540,7 @@ body {
         font-size: 3rem;
         padding-top: 2rem; }
         .search-box__list__item__link:link:hover, .search-box__list__item__link:visited:hover {
-          color: #38506b; }
+          color: #525a63; }
         .search-box__list__item__link:link::first-letter, .search-box__list__item__link:visited::first-letter {
           color: #FF6473; }
 

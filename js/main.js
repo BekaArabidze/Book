@@ -15,6 +15,9 @@ let loading = window.addEventListener("load", _ => {
 
 
 
+
+
+
 //=== === === === === LANGUAGE CHANGE ++++++
 
 let buttons = document.querySelectorAll(".translate");
@@ -62,6 +65,23 @@ $('#toggleMenuBtn').click(function () {
     $(this).toggleClass('active');
     $('#overlay').toggleClass('open');
 });
+
+
+// Toggle animation
+
+$(document).ready(function () {
+    $(".menu-icon").on("click", function () {
+        $("nav ul").toggleClass("showing");
+    });
+});
+// FADE ANIMATION
+$(window).on("scroll", function () {
+    if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+    } else {
+        $('nav').removeClass('black');
+    }
+})
 
 
 $(document).ready(function () {
@@ -227,7 +247,3 @@ TweenMax.from('.search-box__list', 2, {
 
 
 /// All other Pages Animation
-
-
-
-

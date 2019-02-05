@@ -405,112 +405,82 @@ body {
       position: relative;
       margin-top: 1.5rem; }
 
-.button_container {
+.navigation {
   position: fixed;
-  top: 4%;
-  right: 3%;
-  height: 27px;
-  width: 35px;
-  cursor: pointer;
-  transition: opacity .25s ease;
-  z-index: 101; }
-  .button_container__pageMarker {
-    width: 10rem;
-    height: 18rem;
-    background-color: #455D7A;
-    clip-path: polygon(0% 0%, 0% 100%, 50% 70%, 100% 100%, 100% 0%);
-    transform: translate(-33%, -28%); }
-  .button_container:hover {
-    opacity: .9;
-    z-index: 101; }
-  .button_container span {
-    background: #FF6473;
-    border: none;
-    height: 5px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .35s ease;
-    cursor: pointer;
-    z-index: 101; }
-    .button_container span:nth-of-type(2) {
-      top: 11px; }
-    .button_container span:nth-of-type(3) {
-      top: 22px; }
-
-@media (max-width: 1000px) {
-  .button_container__pageMarker {
-    display: none; } }
-
-.overlay {
-  position: fixed;
-  z-index: 100;
-  background: #233142;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 0%;
-  opacity: 100%;
-  visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden; }
-  .overlay.open {
-    opacity: 100;
-    visibility: visible;
-    height: 100%; }
-    .overlay.open li {
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s; }
-      .overlay.open li:nth-of-type(2) {
-        animation-delay: .4s; }
-      .overlay.open li:nth-of-type(3) {
-        animation-delay: .45s; }
-      .overlay.open li:nth-of-type(4) {
-        animation-delay: .50s; }
-  .overlay nav {
+  right: 0;
+  top: 0;
+  height: 70px;
+  line-height: 66px;
+  color: #fff;
+  background-color: transparent;
+  z-index: 1000; }
+  .navigation__logo-box {
     position: relative;
-    height: 80%;
-    top: 45%;
-    transform: translateY(-50%);
-    font-size: 5rem;
-    font-family: 'Varela Round', serif;
-    font-weight: 400;
-    text-align: center; }
-  .overlay ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%; }
-    .overlay ul li {
-      display: block;
-      height: 25%;
-      height: calc(100% / 6);
-      min-height: 50px;
-      position: relative;
-      opacity: 0; }
-      .overlay ul li a {
-        display: block;
-        position: relative;
-        color: #FFF;
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 15px;
+    z-index: 50; }
+  .navigation__logo {
+    width: 5rem; }
+  .navigation nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px; }
+    .navigation nav ul {
+      line-height: 60px;
+      list-style: none;
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      transition: 1s; }
+    .navigation nav.black ul {
+      background: #233142;
+      -webkit-box-shadow: 0px 4px 2px -1px rgba(20, 20, 20, 0.5);
+      box-shadow: 0px 4px 2px -1px rgba(20, 20, 20, 0.5);
+      border: 1px solid rgba(28, 110, 164, 0.5); }
+    .navigation nav ul li {
+      display: inline-block;
+      padding: 16px 40px; }
+      .navigation nav ul li a {
         text-decoration: none;
-        overflow: hidden; }
-        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-          width: 100%; }
-        .overlay ul li a::first-letter {
-          color: #FF6473; }
-        .overlay ul li a:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          transform: translateX(-50%);
-          height: 3px;
-          background: #FFF;
-          transition: .35s; }
+        color: #fff;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 25px; }
+        .navigation nav ul li a:hover {
+          color: #d6d6d6; }
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  font-size: 20px;
+  margin-right: 20px;
+  background-color: #233142;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none; }
+
+@media (max-width: 786px) {
+  nav ul {
+    max-height: 0px;
+    background-color: #233142; }
+  nav.black ul {
+    background-color: #233142; }
+  .showing {
+    max-height: 100vh; }
+  li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center; }
+  .menu-icon {
+    display: block; } }
 
 .search-box {
   max-width: 100%;

@@ -70,7 +70,7 @@ $('#toggleMenuBtn').click(function () {
 // Toggle animation
 
 $(document).ready(function () {
-    $(".menu-icon").on("click", function () {
+    $(".burger").on("click", function () {
         $("nav ul").toggleClass("showing");
     });
 });

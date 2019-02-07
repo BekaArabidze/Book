@@ -69,17 +69,18 @@ $('#toggleMenuBtn').click(function () {
 
 // Toggle animation
 
+
 $(document).ready(function () {
     $(".burger").on("click", function () {
-        $("nav ul").toggleClass("showing");
+        $("ul").toggleClass("showing");
     });
 });
 // FADE ANIMATION
 $(window).on("scroll", function () {
     if ($(window).scrollTop()) {
-        $('nav').addClass('black');
+        $('.navigation').addClass('white');
     } else {
-        $('nav').removeClass('black');
+        $('.navigation').removeClass('white');
     }
 })
 

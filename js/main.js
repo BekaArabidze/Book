@@ -59,6 +59,11 @@ xmlhttp.send();
 //=== === === === === ===        === === === === === ===//
 //=== === === === === === JQUERY === === === === === ===//
 //=== === === === === ===        === === === === === ===//
+//navigaciis tavidan sheqmna
+//max with-is paddingint sheqmna
+//feris tetrad shecvla da filter: drop-shadow-s gamoyeneba
+//menius zomis dapataraveba
+// rom shecvalo hvr ---- sheitane klasad da !important miuwere backgrounds
 
 //=== === === HEADER ANIMATION
 $('#toggleMenuBtn').click(function () {

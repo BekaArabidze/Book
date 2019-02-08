@@ -412,7 +412,7 @@ body {
   right: 0;
   top: 0;
   color: #fff;
-  transition: .2s ease-out;
+  transition: .1s ease-out;
   background-color: transparent;
   z-index: 1000; }
   .navigation__logo-box {
@@ -462,21 +462,26 @@ body {
 
 .white {
   background-color: white;
-  padding: 2px 8px;
+  padding: 1px 8px;
   color: #233142;
+  border-bottom: solid 1px #fff;
+  filter: drop-shadow(0 0 5px #333);
   transition: .2s ease-out; }
   .white a {
     color: #233142; }
 
 .menu-icon {
-  line-height: 60px;
-  height: 70px;
+  line-height: 50px;
+  height: 50px;
   font-size: 15px;
   float: right;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 11px 20px;
   color: #233142;
   display: none; }
+  .menu-icon:hover {
+    color: #FF6473;
+    transition: .1s ease-out; }
 
 .burger {
   cursor: pointer;
@@ -485,6 +490,11 @@ body {
 @media (max-width: 768px) {
   .navigation {
     background-color: white; }
+    .navigation li {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 24px;
+      text-align: center; }
   ul {
     max-height: 0px;
     background-color: white; }
@@ -493,11 +503,6 @@ body {
     max-height: 100vh; }
     .showing a {
       color: #233142; }
-  li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px;
-    text-align: center; }
   .menu-icon {
     display: block; } }
 

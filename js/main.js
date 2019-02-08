@@ -74,7 +74,6 @@ $('#toggleMenuBtn').click(function () {
 
 // Toggle animation
 
-
 $(document).ready(function () {
     $(".burger").on("click", function () {
         $("ul").toggleClass("showing");
@@ -250,6 +249,13 @@ TweenMax.from('.search-box__list', 2, {
     ease: Back.easeOut.config(1.3),
     y: 100
 });
+
+
+// TweenMax.from('.animation', 2, {
+//     opacity: 0,
+//     ease: Back.easeOut.config(1.3),
+//     x: 200
+// });
 
 
 /// All other Pages Animation

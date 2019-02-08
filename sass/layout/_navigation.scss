@@ -207,7 +207,7 @@
         color: white;
 
         &:hover{
-            color: #8d8d8d;
+            color: #c4c4c4;
             
         }
     }
@@ -236,7 +236,7 @@
 }
 .white {
     background-color: white;
-    padding: 1px 8px;
+    padding: 0px 35px;
     color:$primary-color-second;
     border-bottom: solid 1px #fff;
     filter: drop-shadow(0 0 5px #333);
@@ -283,7 +283,7 @@
         li {
             box-sizing: border-box;
             width: 100%;
-            padding: 24px;
+            padding: 35px;
             text-align: center;
         }
     }
@@ -314,6 +314,21 @@
     .menu-icon {
         display: block;
     }
+    .white {
+        background-color: white;
+        padding: 0px 5px;
+        color:$primary-color-second;
+        border-bottom: solid 1px #fff;
+        filter: drop-shadow(0 0 5px #333);
+        
+        transition: .2s ease-out;
+    
+    
+        a{
+            color:$primary-color-second;
+        }
+    }
+    
     
 
 }

@@ -81,10 +81,12 @@ $(document).ready(function () {
 });
 // FADE ANIMATION
 $(window).on("scroll", function () {
-    if ($(window).scrollTop()) {
+    if ($(window).scrollTop() > 300) {
         $('.navigation').addClass('white');
+        $('.navigation__logo').css('width', '70%');
     } else {
         $('.navigation').removeClass('white');
+        $('.navigation__logo').css('width', '80%');
     }
 })
 

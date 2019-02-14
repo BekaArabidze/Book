@@ -160,15 +160,19 @@
 .navigation {
     // display: flex;
     // align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     left: 0;
     right: 0;
     top: 0;
     color: #fff;
-    transition: .1s ease-out;
-    background-color:transparent;
+    background-color: transparent;
     z-index: 1000;
+    padding: 2.3em;
+    transition: .3s;
 
     &__logo-box {
         position: relative;
@@ -177,10 +181,11 @@
         padding: 5px 20px;
         text-decoration: none;
         z-index: 50;
+        width: 8.6%;
     }
 
     &__logo {
-        width: 4rem;
+        width: 80%;
 
     }
 
@@ -191,13 +196,15 @@
         overflow: hidden;
         transition: 1s;
         float: right;
-        
+
 
     }
+
     li {
         display: inline-block;
         padding: 5px 30px;
     }
+
     a {
         display: block;
         padding: 5px 10px;
@@ -206,18 +213,20 @@
         font-family: 'Varela Round', sans-serif;
         color: white;
 
-        &:hover{
+        &:hover {
             color: #c4c4c4;
-            
+
         }
     }
+
     // &__menu-box{
     //     clear: both;
-        
+
 
     // }
-    
+
 }
+
 .hvr-underline-from-center::before {
     content: "";
     position: absolute;
@@ -227,25 +236,26 @@
     bottom: 0;
     background: $primary-color-first;
     height: 4px;
-    -webkit-transition-property: left,right;
-    transition-property: left,right;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
     -webkit-transition-duration: .3s;
     transition-duration: .3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
 .white {
     background-color: white;
     padding: 0px 35px;
-    color:$primary-color-second;
+    color: $primary-color-second;
     border-bottom: solid 1px #fff;
     filter: drop-shadow(0 0 5px #333);
-    
+
     transition: .2s ease-out;
 
 
-    a{
-        color:$primary-color-second;
+    a {
+        color: $primary-color-second;
     }
 }
 
@@ -262,7 +272,7 @@
     display: none;
 
     &:hover {
-        color:$primary-color-first;
+        color: $primary-color-first;
         transition: .1s ease-out;
     }
 
@@ -277,7 +287,7 @@
 /// HUMBURGER ============
 
 @media (max-width: 768px) {
-    .navigation{
+    .navigation {
         background-color: white;
 
         li {
@@ -300,36 +310,38 @@
 
 
     .showing {
-        
+
         width: 100%;
         max-height: 100vh;
-        a{
-            color:$primary-color-second;
+
+        a {
+            color: $primary-color-second;
         }
 
     }
 
-    
+
 
     .menu-icon {
         display: block;
     }
+
     .white {
         background-color: white;
         padding: 0px 5px;
-        color:$primary-color-second;
+        color: $primary-color-second;
         border-bottom: solid 1px #fff;
         filter: drop-shadow(0 0 5px #333);
-        
+
         transition: .2s ease-out;
-    
-    
-        a{
-            color:$primary-color-second;
+
+
+        a {
+            color: $primary-color-second;
         }
     }
-    
-    
+
+
 
 }
 

@@ -406,24 +406,29 @@ body {
       margin-top: 1.5rem; }
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   left: 0;
   right: 0;
   top: 0;
   color: #fff;
-  transition: .1s ease-out;
   background-color: transparent;
-  z-index: 1000; }
+  z-index: 1000;
+  padding: 2.3em;
+  transition: .3s; }
   .navigation__logo-box {
     position: relative;
     display: block;
     float: left;
     padding: 5px 20px;
     text-decoration: none;
-    z-index: 50; }
+    z-index: 50;
+    width: 8.6%; }
   .navigation__logo {
-    width: 4rem; }
+    width: 80%; }
   .navigation ul {
     margin: 0;
     padding: 0;
@@ -453,8 +458,8 @@ body {
   bottom: 0;
   background: #FF6473;
   height: 4px;
-  -webkit-transition-property: left,right;
-  transition-property: left,right;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
   -webkit-transition-duration: .3s;
   transition-duration: .3s;
   -webkit-transition-timing-function: ease-out;

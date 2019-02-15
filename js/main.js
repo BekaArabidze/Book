@@ -59,11 +59,7 @@ xmlhttp.send();
 //=== === === === === ===        === === === === === ===//
 //=== === === === === === JQUERY === === === === === ===//
 //=== === === === === ===        === === === === === ===//
-//navigaciis tavidan sheqmna
-//max with-is paddingint sheqmna
-//feris tetrad shecvla da filter: drop-shadow-s gamoyeneba
-//menius zomis dapataraveba
-// rom shecvalo hvr ---- sheitane klasad da !important miuwere backgrounds
+
 
 //=== === === HEADER ANIMATION
 $('#toggleMenuBtn').click(function () {
@@ -75,10 +71,18 @@ $('#toggleMenuBtn').click(function () {
 // Toggle animation
 
 $(document).ready(function () {
-    $(".burger").on("click", function () {
+    $(".menu-icon").on("click", function () {
         $("ul").toggleClass("showing");
     });
 });
+
+
+$(document).ready(function () {
+    $(".menu-icon").click(function () {
+        $(this).toggleClass("is-active");
+    });
+});
+
 // FADE ANIMATION
 $(window).on("scroll", function () {
     if ($(window).scrollTop() > 300) {

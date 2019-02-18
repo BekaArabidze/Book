@@ -276,10 +276,12 @@
         transition: all .2s ease-out;
 
         &:hover {
-            color: $primary-color-first;
+            color: red;
 
         }
+
     }
+    
 
 }
 
@@ -315,6 +317,7 @@
             padding: 30px;
             text-align: center;
             display: block;
+            transform: translateX(-100px) ;
         }
     }
 
@@ -337,6 +340,8 @@
 
         a {
             color: $primary-color-second;
+             transform: translateX(70px) ;
+             transition: all .8s ease-in-out;
         }
 
     }
@@ -345,6 +350,8 @@
 
     .menu-icon {
         display: block;
+
+        
     }
 
     .white {

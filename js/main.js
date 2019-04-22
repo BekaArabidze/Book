@@ -4,12 +4,12 @@
 
 
 //=== === === === LOADING SCREEN
-let loadingScreen = document.querySelector(".loading_screen");
 // let loadingScreen = document.querySelector(".loading_screen");
+// // let loadingScreen = document.querySelector(".loading_screen");
 
-let loading = window.addEventListener("load", _ => {
-    document.body.removeChild(loadingScreen);
-});
+// let loading = window.addEventListener("load", _ => {
+//     document.body.removeChild(loadingScreen);
+// });
 
 
 
@@ -20,33 +20,33 @@ let loading = window.addEventListener("load", _ => {
 
 //=== === === === === LANGUAGE CHANGE ++++++
 
-let buttons = document.querySelectorAll(".translate");
-let language = document.querySelectorAll(".lang");
+// let buttons = document.querySelectorAll(".translate");
+// let language = document.querySelectorAll(".lang");
 
 
 
-const xmlhttp = new XMLHttpRequest();
+// const xmlhttp = new XMLHttpRequest();
 
-xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-        let arrLang = JSON.parse(this.responseText);
+// xmlhttp.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//         let arrLang = JSON.parse(this.responseText);
 
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener('click', () => {
-                let lang = buttons[i].getAttribute('id');
-                console.log(lang);
+//         for (let i = 0; i < buttons.length; i++) {
+//             buttons[i].addEventListener('click', () => {
+//                 let lang = buttons[i].getAttribute('id');
+//                 console.log(lang);
 
-                language.forEach((element) => {
-                    element.innerHTML = arrLang[lang][element.getAttribute('key')];
-                });
-            });
-        }
-    }
-};
+//                 language.forEach((element) => {
+//                     element.innerHTML = arrLang[lang][element.getAttribute('key')];
+//                 });
+//             });
+//         }
+//     }
+// };
 
 
-xmlhttp.open("GET", "../data/language/translate.txt", true);
-xmlhttp.send();
+// xmlhttp.open("GET", "../data/language/translate.txt", true);
+// xmlhttp.send();
 
 
 
@@ -113,10 +113,10 @@ $(document).ready(function () {
 //=== === === === === === SCROOL-OUT === === === === === ===//
 //=== === === === === ===            === === === === === ===//
 
-ScrollOut({
-    once: true,
-    threshold: .8
-});
+// ScrollOut({
+//     once: true,
+//     threshold: .8
+// });
 
 
 

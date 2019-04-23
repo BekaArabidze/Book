@@ -78,11 +78,13 @@ body {
   font-size: calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .commertial--main {
+  margin-bottom: 2rem !important;
   font-weight: bold;
   font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1900 - 700))) !important; }
 
 .commertial--sub {
-  color: #3d444d;
+  color: #3d444db3;
+  font-weight: 100;
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700))) !important; }
 
 .primary-text--main {
@@ -112,6 +114,9 @@ body {
 
 .about-textbox--sub {
   font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300))) !important; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
 
 .commertial_section {
   max-width: 80%;
@@ -175,7 +180,7 @@ body {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "name surname " "date date" "email button" "password button"; }
+  grid-template-areas: "name surname " "date date" "email button" "password button"; }
   .registration_container__name {
     grid-area: name; }
   .registration_container__surname {
@@ -197,7 +202,7 @@ body {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
+    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
 
 .login_container {
   max-width: 60%;
@@ -207,7 +212,7 @@ body {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "email email" "password password" "button button"; }
+  grid-template-areas: "email email" "password password" "button button"; }
   .login_container__email {
     grid-area: email; }
   .login_container__password {
@@ -592,18 +597,32 @@ body {
       .search-box__list__item:nth-last-child() {
         display: block; } }
 
-.loading_screen {
-  background-color: white;
-  width: 100%;
-  height: 100vh;
-  display: block;
-  position: fixed;
-  z-index: 999; }
-  .loading_screen img {
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%; }
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around; }
+
+.card-img-top {
+  height: 14rem !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important; }
+
+.card-body {
+  padding: 0.85rem !important; }
+
+.card-text {
+  font-size: 1.3rem;
+  color: #00000096;
+  line-height: 2.1rem; }
+
+.card {
+  width: 21rem !important;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 16px 40px !important;
+  margin: 2rem; }
 
 .subcription {
   max-width: 100%;
@@ -615,7 +634,7 @@ body {
   background-position: top;
   background-attachment: fixed; }
   .subcription__registration-box {
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Varela Round", sans-serif;
     display: block;
     max-width: 100%; }
     .subcription__registration-box ul {
@@ -640,7 +659,7 @@ body {
           box-sizing: border-box;
           border-radius: 5px;
           position: relative;
-          top: -.7rem; }
+          top: -0.7rem; }
           .subcription__registration-box ul li input:focus {
             border: 2px solid #1abc9c; }
           .subcription__registration-box ul li input:focus + ::placeholder {
@@ -648,7 +667,7 @@ body {
           .subcription__registration-box ul li input:placeholder-shown {
             color: rgba(0, 0, 0, 0.5);
             font-size: 2rem; }
-        .subcription__registration-box ul li input[type=text] {
+        .subcription__registration-box ul li input[type="text"] {
           padding: 1rem;
           font-size: 2rem; }
 
@@ -664,7 +683,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   text-align: center;
   position: relative;
   top: 2rem; }
@@ -677,31 +696,45 @@ body {
     display: block;
     font-size: 1.9rem;
     position: relative;
-    top: .5rem;
-    left: .2rem; }
+    top: 0.5rem;
+    left: 0.2rem; }
 
 .commertial_section {
-  width: 100%;
-  height: 170vh; }
+  width: 100%; }
   .commertial_section__first {
     width: 100%;
-    height: 90vh; }
+    height: 55rem; }
     .commertial_section__first__img {
-      width: 80%;
-      margin: 0 auto; }
+      width: 100%;
+      margin: 0 auto;
+      background-image: url("../../img/commertial_1.jpg");
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0px 0px 20px 15px #0000001a; }
     .commertial_section__first__text {
       max-width: 50rem;
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-align: center; }
   .commertial_section__second {
     width: 100%;
-    height: 50vh; }
+    height: 55rem; }
     .commertial_section__second__text {
       max-width: 50rem;
-      text-align: right;
-      margin: 0 auto; }
+      text-align: center;
+      margin: 0 auto;
+      grid-column: 1/2;
+      grid-row: 1/2; }
     .commertial_section__second__img {
-      width: 80%;
-      margin: 0 auto; }
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 100%;
+      margin: 0 auto;
+      background-image: url("../../img/commertial_2.jpg");
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0px 0px 20px 15px #0000001a; }
 
 .blogers_section {
   width: 100%;
@@ -711,7 +744,7 @@ body {
     color: #233142;
     text-transform: uppercase;
     backface-visibility: hidden;
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Varela Round", sans-serif;
     text-align: center;
     margin-top: 4rem; }
     .blogers_section .blogers-textbox--main {
@@ -726,7 +759,7 @@ body {
       display: block;
       font-size: 2rem;
       position: relative;
-      top: .5rem;
+      top: 0.5rem;
       letter-spacing: 1px; }
   .blogers_section__grid {
     max-width: 100%;
@@ -753,7 +786,7 @@ body {
         justify-content: center;
         align-items: center;
         font-size: 3rem;
-        font-family: 'Varela Round', sans-serif;
+        font-family: "Varela Round", sans-serif;
         position: absolute;
         left: 0;
         top: 0;
@@ -764,7 +797,7 @@ body {
         .blogers_section__grid__box__hover:hover {
           opacity: 1;
           bottom: 50rem;
-          transition: all .6s;
+          transition: all 0.6s;
           background: rgba(35, 49, 66, 0.5); }
 
 .registration_container__title {

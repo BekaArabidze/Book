@@ -1,39 +1,70 @@
-.loading_screen {
-    background-color: white;
-    width: 100%;
-    height: 100vh;
-    display: block;
-    position: fixed;
-    z-index: 999;
+// .loading_screen {
+//     background-color: white;
+//     width: 100%;
+//     height: 100vh;
+//     display: block;
+//     position: fixed;
+//     z-index: 999;
 
+//     img {
+//         @include center;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//     }
+// }
 
-    img {
-        @include center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.card-img-top {
+    height: 14rem !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.card-body {
+    padding: 0.85rem !important;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    color: #00000096;
+    line-height: 2.1rem;
+}
+
+.card {
+    width: 21rem !important;
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 16px 40px !important;
+    margin: 2rem;
 }
 
 .subcription {
     max-width: 100%;
     background-color: $primary-color-second;
     position: relative;
-    background: linear-gradient(0deg, rgba(2, 0, 36, .5) 0%, rgba(29, 47, 51, 0.4) 100%), url(https://ak1.picdn.net/shutterstock/videos/20376331/thumb/1.jpg);
+    background: linear-gradient(
+            0deg,
+            rgba(2, 0, 36, 0.5) 0%,
+            rgba(29, 47, 51, 0.4) 100%
+        ),
+        url(https://ak1.picdn.net/shutterstock/videos/20376331/thumb/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
 
-
-
     &__registration-box {
-        font-family: 'Varela Round', sans-serif;
+        font-family: "Varela Round", sans-serif;
         display: block;
         max-width: 100%;
-
-
-
 
         ul {
             list-style: none;
@@ -53,8 +84,6 @@
                 display: inline-block;
                 padding: 1rem 2rem 0rem 2rem;
 
-
-
                 input {
                     width: 94%;
                     height: 6.5rem;
@@ -63,16 +92,13 @@
                     box-sizing: border-box;
                     border-radius: 5px;
                     position: relative;
-                    top: -.7rem;
-
-
-
+                    top: -0.7rem;
 
                     &:focus {
                         border: 2px solid $color-main;
                     }
 
-                    &:focus+ ::placeholder {
+                    &:focus + ::placeholder {
                         opacity: 0;
                     }
 
@@ -80,40 +106,23 @@
                         color: rgba(0, 0, 0, 0.5);
                         font-size: 2rem;
                     }
-
-
-
-
-
                 }
 
-                input[type=text] {
+                input[type="text"] {
                     padding: 1rem;
                     font-size: 2rem;
-
                 }
-
-
-
-
             }
         }
-
     }
-
 }
 
-@media (max-width:900px) {
-
+@media (max-width: 900px) {
     .subcription {
-
-
         &__registration-box {
             text-align: center;
 
-
             ul {
-
                 li {
                     display: block;
                 }
@@ -122,23 +131,16 @@
     }
 }
 
-
-
-
-
 .subcription-textbox {
     max-width: $max-width;
     height: 15rem;
     color: $font-white-color;
     text-transform: uppercase;
     backface-visibility: hidden;
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Varela Round", sans-serif;
     text-align: center;
     position: relative;
     top: 2rem;
-
-
-
 
     &--main {
         display: block;
@@ -153,55 +155,64 @@
         display: block;
         font-size: 1.9rem;
         position: relative;
-        top: .5rem;
-        left: .2rem;
+        top: 0.5rem;
+        left: 0.2rem;
     }
-
 }
-
-
-
 
 .commertial_section {
     width: 100%;
-    height: 170vh;
+    // height: 120vh;
 
     &__first {
         width: 100%;
-        height: 90vh;
+        height: 55rem;
 
         &__img {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
+            background-image: url("../../img/commertial_1.jpg");
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 0px 20px 15px #0000001a;
         }
 
         &__text {
             max-width: 50rem;
             margin: 0 auto;
+            text-align: center;
+
         }
     }
-
 
     &__second {
         width: 100%;
-        height: 50vh;
+        height: 55rem;
 
         &__text {
-            max-width: 50rem;
-            text-align: right;
+            max-width: 50rem; 
+            text-align: center;
             margin: 0 auto;
+            grid-column: 1/2;
+            grid-row: 1/2;
+
         }
 
         &__img {
-            width: 80%;
+            grid-column: 2/3;
+
+            grid-row: 1/2;
+            width: 100%;
             margin: 0 auto;
+            background-image: url("../../img/commertial_2.jpg");
+            height: 100%; 
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 0px 20px 15px #0000001a;
         }
     }
-
 }
-
-
-
 
 .blogers_section {
     width: 100%;
@@ -209,19 +220,13 @@
     margin-bottom: 20vh;
     // position: relative;
 
-
-
-
     .blogers-textbox {
         color: $primary-color-second-font;
         text-transform: uppercase;
         backface-visibility: hidden;
-        font-family: 'Varela Round', sans-serif;
+        font-family: "Varela Round", sans-serif;
         text-align: center;
         margin-top: 4rem;
-
-
-
 
         &--main {
             display: block;
@@ -230,10 +235,8 @@
             letter-spacing: 10px;
             font-weight: 400;
 
-
             &::first-letter {
                 color: $primary-color-first;
-
             }
         }
 
@@ -241,10 +244,9 @@
             display: block;
             font-size: 2rem;
             position: relative;
-            top: .5rem;
+            top: 0.5rem;
             letter-spacing: 1px;
         }
-
     }
 
     &__grid {
@@ -253,16 +255,11 @@
         margin-top: 10rem;
         position: relative;
 
-
-
-
-
         &__box {
             margin: 0 auto;
             max-width: 100%;
             height: auto;
             position: relative;
-
 
             &__img {
                 max-width: 100%;
@@ -273,8 +270,6 @@
                 cursor: pointer;
                 position: relative;
                 background-size: cover;
-
-
             }
 
             /// ===  ===  === Hover on images
@@ -285,38 +280,30 @@
                 justify-content: center;
                 align-items: center;
                 font-size: 3rem;
-                font-family: 'Varela Round', sans-serif;
+                font-family: "Varela Round", sans-serif;
                 position: absolute;
                 left: 0;
                 top: 0;
                 color: $font-white-color;
                 z-index: 20;
                 opacity: 0;
-                transition: bottom .5s, opacity .5s cubic-bezier(.33, .66, .66, 1);
-
-
-
+                transition: bottom 0.5s,
+                    opacity 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
 
                 &:hover {
                     opacity: 1;
                     bottom: 50rem;
-                    transition: all .6s;
+                    transition: all 0.6s;
                     background: rgba(35, 49, 66, 0.5);
-
-
                 }
-
             }
 
             /// ===  ===  === Hover on images
-
 
             // IMG shadow hover
             // .card-hover {
             //     @extend .blogers_section__grid__box__img;
             //     @include material-shadow(1);
-
-
 
             //     &:hover {
             //         @include material-shadow(4);
@@ -325,11 +312,7 @@
             //     }
             // }
 
-
             /// IMG shadow hover
-
-
-
         }
     }
 }

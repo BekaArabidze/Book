@@ -104,7 +104,7 @@ body {
   font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .subcription-textbox--main {
-  font-size: calc(30px + (40 - 30) * ((100vw - 300px) / (1600 - 300))) !important; }
+  font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300))) !important; }
 
 .registration_container__title {
   font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300))) !important; }
@@ -579,50 +579,8 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  background-attachment: fixed; }
-  .subcription__registration-box {
-    font-family: "Varela Round", sans-serif;
-    display: block;
-    max-width: 100%; }
-    .subcription__registration-box ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      display: inline-block;
-      position: relative;
-      width: 100%; }
-      .subcription__registration-box ul li {
-        display: block;
-        height: calc(100% / 2);
-        min-height: 70px;
-        position: relative;
-        display: inline-block;
-        padding: 1rem 2rem 0rem 2rem; }
-        .subcription__registration-box ul li input {
-          width: 94%;
-          height: 6.5rem;
-          padding: 0 3px 0 10px;
-          font-size: 2rem;
-          box-sizing: border-box;
-          border-radius: 5px;
-          position: relative;
-          top: -0.7rem; }
-          .subcription__registration-box ul li input:focus {
-            border: 2px solid #1abc9c; }
-          .subcription__registration-box ul li input:focus + ::placeholder {
-            opacity: 0; }
-          .subcription__registration-box ul li input:placeholder-shown {
-            color: rgba(0, 0, 0, 0.5);
-            font-size: 2rem; }
-        .subcription__registration-box ul li input[type="text"] {
-          padding: 1rem;
-          font-size: 2rem; }
-
-@media (max-width: 900px) {
-  .subcription__registration-box {
-    text-align: center; }
-    .subcription__registration-box ul li {
-      display: block; } }
+  background-attachment: fixed;
+  padding: 6vw; }
 
 .subcription-textbox {
   max-width: 80%;
@@ -633,7 +591,7 @@ p {
   font-family: "Varela Round", sans-serif;
   text-align: center;
   position: relative;
-  top: 2rem; }
+  margin-top: 5rem; }
   .subcription-textbox--main {
     display: block;
     position: relative; }
@@ -643,8 +601,8 @@ p {
     display: block;
     font-size: 1.9rem;
     position: relative;
-    top: 0.5rem;
-    left: 0.2rem; }
+    top: .5rem;
+    left: .2rem; }
 
 .commertial_section {
   width: 100%; }

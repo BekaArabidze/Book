@@ -24,103 +24,27 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-
-
-
-    &__registration-box {
-        font-family: 'Varela Round', sans-serif;
-        display: block;
-        max-width: 100%;
-
-
-
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0 auto;
-            display: inline-block;
-            position: relative;
-            // height: 100%; es sheidzleba gadaswordes
-            width: 100%;
-
-            li {
-                display: block;
-                // height: 25%;
-                height: calc(100% / 2);
-                min-height: 70px;
-                position: relative;
-                display: inline-block;
-                padding: 1rem 2rem 0rem 2rem;
-
-
-
-                input {
-                    width: 94%;
-                    height: 6.5rem;
-                    padding: 0 3px 0 10px;
-                    font-size: 2rem;
-                    box-sizing: border-box;
-                    border-radius: 5px;
-                    position: relative;
-                    top: -.7rem;
-
-
-
-
-                    &:focus {
-                        border: 2px solid $color-main;
-                    }
-
-                    &:focus+ ::placeholder {
-                        opacity: 0;
-                    }
-
-                    &:placeholder-shown {
-                        color: rgba(0, 0, 0, 0.5);
-                        font-size: 2rem;
-                    }
-
-
-
-
-
-                }
-
-                input[type=text] {
-                    padding: 1rem;
-                    font-size: 2rem;
-
-                }
-
-
-
-
-            }
-        }
-
-    }
-
+    padding: 6vw;
 }
 
-@media (max-width:900px) {
+// @media (max-width:900px) {
 
-    .subcription {
-
-
-        &__registration-box {
-            text-align: center;
+//     .subcription {
 
 
-            ul {
+//         &__registration-box {
+//             text-align: center;
 
-                li {
-                    display: block;
-                }
-            }
-        }
-    }
-}
+
+//             ul {
+
+//                 li {
+//                     display: block;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
 
@@ -135,7 +59,7 @@
     font-family: 'Varela Round', sans-serif;
     text-align: center;
     position: relative;
-    top: 2rem;
+    margin-top: 5rem;
 
 
 
@@ -155,6 +79,7 @@
         position: relative;
         top: .5rem;
         left: .2rem;
+
     }
 
 }

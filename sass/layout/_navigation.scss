@@ -169,7 +169,7 @@
     color: #fff;
     background-color: transparent;
     z-index: 1000;
-    padding: 2.3em;
+    padding: 1em;
     transition: .3s;
 
     &__logo-box {
@@ -179,11 +179,12 @@
         padding: 5px 20px;
         text-decoration: none;
         z-index: 50;
-        width: 8.6%;
+        width: 5%;
     }
 
     &__logo {
-        width: 80%;
+        width: 10rem;
+
 
     }
 
@@ -213,7 +214,7 @@
         color: white;
 
         &:hover {
-            color: #c4c4c4;
+            color:#1D2A33;
 
         }
     }
@@ -317,15 +318,22 @@
             padding: 30px;
             text-align: center;
             display: block;
-            transform: translateX(-100px) ;
+             
+        }
+
+        &__logo{
+            width:5rem;
         }
     }
 
 
     ul {
+        display: none;
         max-height: 0px;
         background-color: white;
     }
+
+
 
     // .white {
     //     background-color: white;
@@ -334,13 +342,14 @@
 
     .showing {
 
-        width: 100%;
+         
         max-height: 100vh;
+        display: block;
         // transition: all 1s ease-in-out;
 
         a {
             color: $primary-color-second;
-             transform: translateX(70px) ;
+             
              transition: all .8s ease-in-out;
         }
 
@@ -370,7 +379,8 @@
     }
 
     .navigation__logo-box {
-        display: none;
+        display: block;
+        width: auto;
     }
 
 

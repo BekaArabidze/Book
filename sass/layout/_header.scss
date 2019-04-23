@@ -6,37 +6,71 @@
 
 
 
-    &__video-box {
-        height: 100vh;
-        overflow: hidden;
+    // &__video-box {
+    //     height: 100vh;
+    //     overflow: hidden;
 
 
-        /// ES KIDE QMNIS ELEMNTIS WEMODAN :afters ROMELITAC PATARAZE OVERLAY UKETEBS FERIS
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            z-index: 5;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+    //     /// ES KIDE QMNIS ELEMNTIS WEMODAN :afters ROMELITAC PATARAZE OVERLAY UKETEBS FERIS
+    //     &::after {
+    //         content: '';
+    //         display: block;
+    //         position: absolute;
+    //         z-index: 5;
+    //         top: 0;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 100%;
 
-            background-color: rgba($primary-color-second, .75);
+    //         background-color: rgba($primary-color-third, .75);
+    //     }
+    // }
+
+    &__photo-box {
+       height: 100vh;
+       overflow:hidden;
+
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                background-color: rgba(black, 0.5);
         }
+        
     }
 
-
-
-
-    &__video {
+    &__photo{
         width: 100%;
         height: 100vh;
+        background-image: url("../img/main_photo.jpg");
+        background-repeat:no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: 100% 96%;
+
         object-fit: cover;
+        overflow: hidden;
+        
 
     }
+
+
+  
+
+    // &__video {
+    //     width: 100%;
+    //     height: 100vh;
+    //     background-size: cover;
+    //     background-position: center;
+    //     object-fit: cover;
+
+    // }
 
     // aq SHEVCVALE
     // MOBILE SURATI IQNEBA ==================================
@@ -67,6 +101,7 @@
 
     }
 }
+
 
 
 .heading-primary {

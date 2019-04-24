@@ -425,7 +425,7 @@ p {
     font-family: 'Varela Round', sans-serif;
     color: white; }
     .navigation a:hover {
-      color: #1D2A33; }
+      color: #c4c5c5; }
 
 .hvr-underline-from-center::before {
   content: "";

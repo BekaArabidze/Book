@@ -204,7 +204,7 @@ p {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "name surname " "date date" "email button" "password button"; }
+  grid-template-areas: "name surname " "date date" "email button" "password button"; }
   .registration_container__name {
     grid-area: name; }
   .registration_container__surname {
@@ -226,7 +226,7 @@ p {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
+    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
 
 .login_container {
   max-width: 60%;
@@ -236,7 +236,7 @@ p {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "email email" "password password" "button button"; }
+  grid-template-areas: "email email" "password password" "button button"; }
   .login_container__email {
     grid-area: email; }
   .login_container__password {
@@ -406,7 +406,8 @@ p {
     z-index: 50;
     width: 5%; }
   .navigation__logo {
-    width: 10rem; }
+    width: 7rem;
+    padding: 0.7rem 0; }
   .navigation ul {
     margin: 0;
     padding: 0;
@@ -571,6 +572,15 @@ p {
       position: relative; }
       .search-box__list__item:nth-last-child() {
         display: block; } }
+
+.card-img-top {
+  background-size: contain;
+  width: 85%;
+  margin: 0 auto;
+  height: 14rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .cards_container {
   display: flex;

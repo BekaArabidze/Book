@@ -17,7 +17,15 @@
     
 }
 
-
+.card-img-top{
+    background-size: contain;
+    width: 85%;
+    margin: 0 auto;
+    height: 14rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 .cards_container {

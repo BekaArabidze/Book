@@ -67,7 +67,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: FiraGO-Regular; }
 
 .first_red::first-letter {
   color: #B54D4E; }
@@ -203,7 +204,7 @@ p {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "name surname " "date date" "email button" "password button"; }
+  grid-template-areas: "name surname " "date date" "email button" "password button"; }
   .registration_container__name {
     grid-area: name; }
   .registration_container__surname {
@@ -225,7 +226,7 @@ p {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
+    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
 
 .login_container {
   max-width: 60%;
@@ -235,7 +236,7 @@ p {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "email email" "password password" "button button"; }
+  grid-template-areas: "email email" "password password" "button button"; }
   .login_container__email {
     grid-area: email; }
   .login_container__password {
@@ -617,7 +618,6 @@ p {
   color: #E8E2DB;
   text-transform: uppercase;
   backface-visibility: hidden;
-  font-family: "Varela Round", sans-serif;
   text-align: center;
   position: relative;
   margin-top: 5rem; }
@@ -724,7 +724,6 @@ p {
         justify-content: center;
         align-items: center;
         font-size: 3rem;
-        font-family: "Varela Round", sans-serif;
         position: absolute;
         left: 0;
         top: 0;

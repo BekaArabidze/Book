@@ -23,6 +23,24 @@
     }
 }
 
+@media (max-width: 600px) {
+    .commertial_section {
+
+        &__first{
+            margin-bottom: 4rem;
+        }
+
+ 
+        &__second {
+
+            &__text{
+               grid-row: 2/3 !important;
+            }
+ 
+        }
+    }
+}
+
 
 @media (min-width: 280px) {
     .commertial_section {

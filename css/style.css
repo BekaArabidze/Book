@@ -830,6 +830,16 @@ p {
         position: relative;
         background-size: cover; }
 
+.contact100-form {
+  height: 100% !important;
+  padding: 0 !important; }
+
+#map {
+  height: 100% !important; }
+
+#map > iframe:nth-child(1) {
+  height: 100% !important; }
+
 .but {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;

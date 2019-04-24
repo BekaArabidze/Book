@@ -18,6 +18,8 @@
 }
 
 
+
+
 .cards_container {
     display: flex;
     flex-direction: row;
@@ -175,6 +177,11 @@
     }
 }
 
+
+
+
+
+
 .blogers_section {
     width: 100%;
     margin-top: 20vh;
@@ -185,7 +192,7 @@
         color: $primary-color-second-font;
         text-transform: uppercase;
         backface-visibility: hidden;
-        font-family: "Varela Round", sans-serif;
+        font-family: FiraGO-Regular;
         text-align: center;
         margin-top: 4rem;
 

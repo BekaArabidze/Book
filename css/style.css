@@ -75,8 +75,17 @@ body {
 body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Varela Round', sans-serif;
+  font-family: 'FiraGo', sans-serif;
   /*font-size: 16px;*/
   line-height: 2; }
+
+@font-face {
+  font-family: FiraGO-Regular;
+  src: url(../fonts/FiraGO/Roman/FiraGO-Regular.woff); }
+
+@font-face {
+  font-family: FiraGO-SemiBold;
+  src: url(../fonts/FiraGO/Roman/FiraGO-SemiBold.woff); }
 
 .heading-primary--main {
   font-weight: bold;
@@ -194,7 +203,7 @@ p {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "name surname " "date date" "email button" "password button"; }
+  grid-template-areas: "name surname " "date date" "email button" "password button"; }
   .registration_container__name {
     grid-area: name; }
   .registration_container__surname {
@@ -216,7 +225,7 @@ p {
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
+    grid-template-areas: "name  " "surname" "date" "email" "password" "button"; } }
 
 .login_container {
   max-width: 60%;
@@ -226,7 +235,7 @@ p {
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "email email" "password password" "button button"; }
+  grid-template-areas: "email email" "password password" "button button"; }
   .login_container__email {
     grid-area: email; }
   .login_container__password {
@@ -302,10 +311,10 @@ p {
 .heading-primary {
   color: #E8E2DB;
   backface-visibility: hidden;
-  margin-bottom: 4rem;
-  font-family: 'Varela Round', sans-serif; }
+  margin-bottom: 4rem; }
   .heading-primary--main {
     display: block;
+    font-family: FiraGO-SemiBold;
     letter-spacing: 15px;
     text-shadow: 2px 1px 3px #071D2B;
     position: relative;
@@ -672,7 +681,7 @@ p {
     color: #59342B;
     text-transform: uppercase;
     backface-visibility: hidden;
-    font-family: "Varela Round", sans-serif;
+    font-family: FiraGO-Regular;
     text-align: center;
     margin-top: 4rem; }
     .blogers_section .blogers-textbox--main {

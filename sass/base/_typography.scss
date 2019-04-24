@@ -1,12 +1,28 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Varela Round', sans-serif;
+    font-family: 'FiraGo', sans-serif;
     // font-weight: 300;
     /*font-size: 16px;*/
     // overflow: hidden;
     line-height: 2;
 
 }
+
+
+//// FIRAGO-Fonts
+
+@font-face {
+  font-family: FiraGO-Regular;
+  src: url(../fonts/FiraGO/Roman/FiraGO-Regular.woff);
+}
+
+@font-face {
+  font-family: FiraGO-SemiBold;
+  src: url(../fonts/FiraGO/Roman/FiraGO-SemiBold.woff);
+}
+
+
 
 
 /// === === === === MAIN HEADER FONT FONT CALC

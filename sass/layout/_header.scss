@@ -108,11 +108,12 @@
     color: $font-white-color;
     backface-visibility: hidden;
     margin-bottom: 4rem;
-    font-family: 'Varela Round', sans-serif;
+    // font-family: 'Varela Round', sans-serif;
 
 
     &--main {
         display: block;
+         font-family: FiraGO-SemiBold;
         // font-size: 9rem;
         letter-spacing: 15px;
         text-shadow: 2px 1px 3px #071D2B;

@@ -87,7 +87,7 @@ ul, li {
 
 .container-contact100 {
   width: 100%;  
-  min-height: 100vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -98,6 +98,8 @@ ul, li {
   align-items: center;
   padding: 15px;
   background: #f2f2f2;
+  margin-top: 18rem;
+  margin-bottom: 2rem;
   
 }
 

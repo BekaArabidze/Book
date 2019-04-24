@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -23,32 +22,41 @@
 
     <!-- ===  === === ABOUT PAGE PHOTO ES DAVAYENE,NAXE MGONI MOGEWONEBA,SHENI DA KATIS SAPATIVSACEMOD,IQNEB IGBALI MOGVITANOS  === === ===  -->
 
-    <header class="header_secondary" style="background: linear-gradient(0deg, rgba(2, 0, 36, .5) 0%, rgba(48, 78, 84, .4) 100%), url(/img/About.jpg) no-repeat;background-attachment: fixed;background-position: center;background-size: cover;object-fit: cover;">
+    <header class="header_secondary" style="background: linear-gradient(0deg, rgba(2, 0, 36, .5) 0%, rgba(48, 78, 84, .4) 100%), url(../img/About.jpg) no-repeat;background-attachment: fixed;background-position: center;background-size: cover;object-fit: cover;">
 
 
-        <div class="header_secondary__logo-box">
-            <img src="img/mainlogo.svg" alt="Logo" class="header_secondary__logo">
+        <!-- ===========  NEW NAVGATION BAR ============-->
+
+
+
+    <div class="navigation">
+        <div class="navigation__logo-box">
+            <img src="../img/logo.svg" class="navigation__logo">
+        </div>
+        
+        <ul class="navigation__ul" >
+            <li><a class="hvr-underline-from-center " href="../index.html">Home</a></li>
+
+            <li><a class="hvr-underline-from-center " href="Other-Pages/about.html">About</a></li>
+
+            <li><a class="hvr-underline-from-center " href="contact.html">Contact</a></li>
+
+        </ul>
+        <div class="menu-icon ">
+            <span class="menu-icon__line "></span>
+            <span class="menu-icon__line "></span>
+            <span class="menu-icon__line "></span>
         </div>
 
-        <div class="button_container" id="toggleMenuBtn">
-            <span class="top" id="toggleMenuBtn_Ln_1"></span>
-            <span class="middle" id="toggleMenuBtn_Ln_2"></span>
-            <span class="bottom" id="toggleMenuBtn_Ln_3"></span>
-        </div>
 
-        <div class="overlay" id="overlay">
-            <nav class="overlay-menu">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="../Other-Pages/library.html">Library</a></li>
-                    <li><a href="../Other-Pages/login.html">Login</a></li>
-                    <li><a href="../Other-Pages/book-page(description).html">Book </a></li>
-                    <li><a href="../Other-Pages/registration.html">Registration</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="../Other-Pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    </div>
+    <!-- ===========  NEW NAVGATION BAR ============-->
+
+
+
+
+
 
         <div class="header_secondary__text-box">
             <h1 class="primary-text">
@@ -71,7 +79,7 @@
     </header>
 
     <!--              Search            -->
-    <div class="search-box">
+    <!-- <div class="search-box">
         <ul class="search-box__list">
             <li class="search-box__list__item">
                 <a class="search-box__list__item__link" href="#">Classic</a>
@@ -97,7 +105,7 @@
 
         </ul>
 
-    </div>
+    </div> -->
 
     <section class="about_section">
         <h1 class="about-textbox">
@@ -113,7 +121,7 @@
                 </div>
 
 
-                <img class="blogers_section__grid__box__img   card-hover" src="/img/beqa-1.jpeg" alt="Beqa">
+                <img class="blogers_section__grid__box__img   card-hover" src="../img/beqa-1.jpeg" alt="Beqa">
                 
 
 
@@ -124,7 +132,7 @@
                 <div class="blogers_section__grid__box__hover">
                     <span style="color:#FF6473;">R</span>obinzon Sokhashvili 
                 </div>
-                <img class="blogers_section__grid__box__img   card-hover" src="/img/robo-1.jpeg" alt="Robo">
+                <img class="blogers_section__grid__box__img   card-hover" src="../img/robo-1.jpeg" alt="Robo">
                 
 
             </div>
@@ -135,56 +143,140 @@
     </section>
 
 
-    <div class="footer">
-
-        <div class="footer__grid-box">
-            <h1 class="footer-primary">
-                <span class="footer-primary--main">“Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers.” 
-                    </span>
-                <span class="footer-primary--sub">― Charles W. Eliot </span>
-            </h1>
-        </div>
-
-        <div class="footer__grid-box">
-            <!-- <button class="translate" id="home-en">English</button>
-                <button class="translate" id="home-ge">Georgian</button>
     
-                <ul>
-                    <li class="lang" key="home">Home</li>
-                    <li class="lang" key="name">Name</li>
-                    <li class="lang" key="surname">Surname</li>
-                </ul> -->
+
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark Bgstyles">
+
+    <div style="background-color: #93897F;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center conn-styles">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 connStyle">
+            <h5 class="mb-0 ">Get connected with us on social networks!</h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right connStyle">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
         </div>
+        <!-- Grid row-->
 
-        <div class="footer__grid-box">
+      </div>
+    </div>
 
-            <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link" href="#">
-                        <span class="footer__icon--1">
-                            <i class="fab fa-facebook"></i>
-                        </span>
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
 
-                    </a></li>
-                <li class="footer__item"><a class="footer__link" href="#">
+      <!-- Grid row -->
+      <div class="row mt-3">
 
-                        <span class="footer__icon--2">
-                            <i class="fab fa-instagram"></i>
-                        </span>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
 
-                    </a></li>
-                <li class="footer__item"><a class="footer__link" href="#">
-                        <span class="footer__icon--3">
-                            <i class="fab fa-linkedin-in"></i>
-                        </span>
-
-
-                    </a></li>
-            </ul>
         </div>
+        <!-- Grid column -->
 
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!">Bootstrap Angular</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> ზაზა ფანასკერტელ-ციციშვილის ქუჩა,9 კორპ. ბ 175</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>(+995)591 54 39 79</p>
+          <p>
+            
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
 
     </div>
+    <!-- Footer Links -->
+
+    
+
+  </footer>
+  <!-- Footer -->
+
+    <!--===================== Foooter   ======================-->
 
 
 
@@ -220,12 +312,11 @@
 
 
     <!-- jQuerry.JS -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- <script src="https://vjs.zencdn.net/7.3.0/video.js"></script> -->
 
     <!-- GREENSOCK.JS -->
@@ -235,7 +326,7 @@
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
 
-    <script type="module" src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 

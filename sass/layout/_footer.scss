@@ -124,10 +124,14 @@
 
 
 .Bgstyles {
-    font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+   font-size: 12px;
 }
 
-.conn-styles{
+.connStyle{
     color:white;
+    font-size: 12px !important;
+    padding: 5px;
 }
 

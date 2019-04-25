@@ -17,7 +17,8 @@
             text-transform: uppercase;
             position: relative;
             letter-spacing: 10px;
-            font-weight: 400;
+            font-weight: bold;
+            margin-bottom: 12rem;
 
             &::first-letter {
                 color: $primary-color-first;
@@ -32,6 +33,7 @@
             position: relative;
             top: .5rem;
             letter-spacing: 1px;
+            line-height: 1.9em;
         }
     }
 

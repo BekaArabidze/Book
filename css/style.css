@@ -75,8 +75,6 @@ body {
   color: #B54D4E; }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Varela Round', sans-serif;
   font-family: 'FiraGo', sans-serif;
   /*font-size: 16px;*/
   line-height: 2; }
@@ -378,8 +376,7 @@ p {
   .header_secondary .primary-text {
     color: #E8E2DB;
     backface-visibility: hidden;
-    margin-bottom: 4rem;
-    font-family: 'Varela Round', sans-serif; }
+    margin-bottom: 4rem; }
     .header_secondary .primary-text--main {
       display: block;
       letter-spacing: 8px;
@@ -857,12 +854,11 @@ hr.style-eight:after {
 
 .about_section {
   width: 100%;
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-bottom: 20vh; }
   .about_section .about-textbox {
     color: #59342B;
     backface-visibility: hidden;
-    font-family: 'Varela Round', sans-serif;
     text-align: center;
     margin-top: 4rem; }
     .about_section .about-textbox--main {
@@ -899,6 +895,25 @@ hr.style-eight:after {
         cursor: pointer;
         position: relative;
         background-size: cover; }
+
+.logo {
+  max-width: 100%;
+  width: 100%;
+  height: 12vw;
+  margin-top: 50px; }
+  .logo__img {
+    width: 100%;
+    height: 100%; }
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 100%;
+    width: 100%;
+    height: 30vw;
+    margin-top: 50px; }
+    .logo__img {
+      width: 100%;
+      height: 100%; } }
 
 .contact100-form {
   height: 100% !important;

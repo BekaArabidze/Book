@@ -1,13 +1,13 @@
 .about_section {
     width: 100%;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-bottom: 20vh;
     
 
     .about-textbox{
         color: $primary-color-second-font;
         backface-visibility: hidden;
-        font-family: 'Varela Round', sans-serif;
+        // font-family: 'Varela Round', sans-serif;
         text-align: center;
         margin-top: 4rem;
 
@@ -68,4 +68,33 @@
 
 
 
+}
+
+
+
+.logo{
+    max-width: 100%;
+    width: 100%;
+    height: 12vw;
+    margin-top: 50px;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo{
+        max-width: 100%;
+        width: 100%;
+        height: 30vw;
+        margin-top: 50px;
+    
+        &__img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }

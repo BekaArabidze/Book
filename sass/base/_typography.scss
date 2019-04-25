@@ -39,16 +39,14 @@ body {
 
 
 /// === === === === COMETRIAL SECTION FONT FONT CALC
-.commertial--main {
+.subcription-textbox--sub  {
     margin-bottom: 2rem !important; 
     font-weight: bold;
     font-size: calc(14px + (50 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
 }
 
-.commertial--sub {
-    color: #3d444db3;
-    font-weight: 100;
-    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1900 - 700))) !important;
+.subcription-textbox--sub {
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1900 - 700))) !important;
 }
 
 

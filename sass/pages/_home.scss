@@ -13,11 +13,32 @@
 //         left: 50%;
 //     }
 // }
-.cards_container__title{
-    
+
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
-.card-img-top{
+.cards_container__title {
+}
+
+.card-img-top {
     background-size: contain;
     width: 85%;
     margin: 0 auto;
@@ -27,7 +48,6 @@
     background-repeat: no-repeat;
 }
 
-
 .cards_container {
     display: flex;
     flex-direction: row;
@@ -35,7 +55,7 @@
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     margin-top: 2rem;
-    margin-bottom: 15rem; 
+    margin-bottom: 15rem;
 }
 
 .card-img-top {
@@ -83,10 +103,8 @@
 
 //     .subcription {
 
-
 //         &__registration-box {
 //             text-align: center;
-
 
 //             ul {
 
@@ -96,21 +114,52 @@
 //             }
 //         }
 //     }
-// }
+// }.subcription > img:nth-child(1) {
+
+.subcription {
+    position: relative;
+    margin-top: 30%;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.383);
+        z-index: 1;
+    }
+
+    &__img {
+        position: absolute;
+        width: 22%;
+        z-index: 2;
+        transform: translateY(-70%);
+        box-shadow: 0px 0px 20px #4b4b4b5e;
+    }
+}
 
 .subcription-textbox {
     max-width: $max-width;
     height: 15rem;
-    color: $font-white-color;
+    color: white;
     text-transform: uppercase;
     backface-visibility: hidden;
     text-align: center;
     position: relative;
+    z-index: 2;
     margin-top: 5rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 6vw;
+    width: 100%;
+    height: 100%;
 
     &--main {
         display: block;
         position: relative;
+        margin-bottom: 5rem;
+        font-weight: bold;
 
         &::first-letter {
             color: $primary-color-first;
@@ -119,11 +168,11 @@
 
     &--sub {
         display: block;
-        font-size: 1.9rem;
-        position: relative;
-        top: .5rem;
-        left: .2rem;
 
+        position: relative;
+        top: 0.5rem;
+        left: 0.2rem;
+        line-height: 1.6em;
     }
 }
 
@@ -152,7 +201,6 @@
             max-width: 50rem;
             margin: 0 auto;
             text-align: center;
-
         }
     }
 
@@ -161,12 +209,11 @@
         height: 55rem;
 
         &__text {
-            max-width: 50rem; 
+            max-width: 50rem;
             text-align: center;
             margin: 0 auto;
             grid-column: 1/2;
             grid-row: 1/2;
-
         }
 
         &__img {
@@ -176,18 +223,13 @@
             width: 100%;
             margin: 0 auto;
             background-image: url("../../img/commertial_2.jpg");
-            height: 100%; 
+            height: 100%;
             background-size: cover;
             background-position: center;
             box-shadow: 0px 0px 20px 15px #0000001a;
         }
     }
 }
-
-
-
-
-
 
 .blogers_section {
     width: 100%;
@@ -246,9 +288,6 @@
                 position: relative;
                 background-size: cover;
                 background: #f4f4f4;
-                
-
-                
             }
 
             /// ===  ===  === Hover on images

@@ -39,6 +39,18 @@
  
         }
     }
+
+    .subcription {
+ 
+        &__img {
+            width: 30% !important;
+
+        }
+    }
+
+    .subcription-textbox--sub  {
+        margin-bottom: 1rem !important; 
+    }
 }
 
 

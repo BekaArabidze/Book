@@ -28,11 +28,11 @@ body {
 /// === === === === MAIN HEADER FONT FONT CALC
 .heading-primary--main {
     font-weight: bold;
-    font-size: calc(20px + (90 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(25px + (90 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
 .heading-primary--sub {
-    font-size: calc(12px + (25 - 12) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-size: calc(14px + (25 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
 
@@ -124,9 +124,19 @@ body {
 
 }
 
+.blogers-textbox--main {
+     font-weight: bold !important;
+     font-size: calc(25px + (60 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
+     margin-bottom: 1rem;
+}
+
 /// === === === === ABOUT FONT CALC
 .about-textbox--sub {
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.about-textbox--main {
+    font-size: calc(20px + (50 - 20) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
 

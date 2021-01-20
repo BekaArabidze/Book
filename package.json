@@ -20,7 +20,7 @@
     "node-sass": "^4.10.0"
   },
   "dependencies": {
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "jquery": "^3.3.1"
   }
 }
